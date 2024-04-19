@@ -2,10 +2,10 @@
 import Link from "next/link";
 
 
-function Links() {
+function NavLinks() {
   const links = [
     {
-      title: "Homepage",
+      title: "Home",
       path: "/",
     },
     {
@@ -38,7 +38,7 @@ function Links() {
     <div>
 
       {links.map((el => (
-        <Link href={el.path} key={el.title} className=" p-4">{el.title}</Link>
+        <Link href={el.path} key={el.title} className="font-bold text-blue-900 hover:underline p-4">{el.title}</Link>
       )))}
 
 
@@ -46,4 +46,4 @@ function Links() {
   )
 }
 
-export default Links
+export default NavLinks
