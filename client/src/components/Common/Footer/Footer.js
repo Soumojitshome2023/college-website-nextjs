@@ -3,84 +3,87 @@ import React from 'react'
 export default function Footer() {
 
   return (
-    <div className="relative bottom-0">
-      <footer class="text-gray-600 body-font">
+    <div className="relative bottom-0 bg-[#272626]">
+      <footer class="text-white body-font">
         <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          {/* <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
               <span class="ml-3 text-xl">Tailblocks</span>
             </a>
             <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+          </div> */}
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.9295269261065!2d88.37397647408291!3d22.95282237922273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8930eeb863655%3A0xb3a6adf26d41d0b5!2sAcademy%20of%20Technology!5e0!3m2!1sen!2sin!4v1713956112554!5m2!1sen!2sin" width="400" height="400" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a class="text-white hover:text-gray-800">First Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a class="text-white hover:text-gray-800">Second Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a class="text-white hover:text-gray-800">Third Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a class="text-white hover:text-gray-800">Fourth Link</a>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a class="text-white hover:text-gray-800">First Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a class="text-white hover:text-gray-800">Second Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a class="text-white hover:text-gray-800">Third Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a class="text-white hover:text-gray-800">Fourth Link</a>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a class="text-white hover:text-gray-800">First Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a class="text-white hover:text-gray-800">Second Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a class="text-white hover:text-gray-800">Third Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a class="text-white hover:text-gray-800">Fourth Link</a>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a class="text-white hover:text-gray-800">First Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a class="text-white hover:text-gray-800">Second Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a class="text-white hover:text-gray-800">Third Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a class="text-white hover:text-gray-800">Fourth Link</a>
                 </li>
               </nav>
             </div>
