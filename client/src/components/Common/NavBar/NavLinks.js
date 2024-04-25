@@ -32,6 +32,10 @@ function NavLinks() {
       title: "Adminstration",
       path: "/adminstration",
     },
+    {
+      title: "login",
+      path: "/login",
+    },
   ];
 
   return (
