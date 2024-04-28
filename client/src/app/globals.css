@@ -8,9 +8,11 @@
   box-sizing: border-box;
 }
 
+/* ============================= */
+/* Scrollbar css */
 ::-webkit-scrollbar {
   width: 6px;
-
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -26,21 +28,21 @@
 }
 
 
-
-
-
 /* ============================= */
 /* scroll Animation css */
 .soumojitanibox {
   overflow: hidden;
-  transform: translateX(30%);
-  transition: transform 0.7s ease-in-out;
+  /* transform: translateY(40%); */
+  /* transition: transform 1s ease-in; */
+
+  opacity: 0;
+  transition: opacity 1.4s linear;
 }
 
 /* .soumojitanibox:nth-of-type(even) {
   transform: translateY(0%);
 } */
-
 .soumojitanibox.show {
-  transform: translateX(0);
+  /* transform: translateY(0); */
+  opacity: 1;
 }

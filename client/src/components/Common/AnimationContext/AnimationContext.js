@@ -11,7 +11,7 @@ export default function useAnimation() {
         if (typeof window !== 'undefined') {
             const handleScroll = () => {
                 const boxes = document.querySelectorAll('.soumojitanibox');
-                const triggerBottom = window.innerHeight / 5 * 3;
+                const triggerBottom = window.innerHeight / 5 * 4;
 
                 boxes.forEach(box => {
                     const boxTop = box.getBoundingClientRect().top;
