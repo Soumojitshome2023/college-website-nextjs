@@ -5,7 +5,7 @@ import { Carousel } from "flowbite-react";
 
 export function CarouselCompo() {
 	return (
-		<div className=" h-[32rem]">
+		<div className="h-60 md:h-[32rem]">
 
 			<Carousel>
 				<img src="/collegepic(1).jpg" alt="..." />

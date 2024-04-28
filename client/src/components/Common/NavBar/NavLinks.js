@@ -33,20 +33,21 @@ function NavLinks() {
       path: "/administration",
     },
     {
-      title: "login",
+      title: "Login",
       path: "/login",
     },
   ];
 
   return (
-    <li>
-
+    <>
       {links.map((el => (
-        <Link href={el.path} key={el.title} className="font-bold text-blue-900 hover:underline p-4 bg-transparent">{el.title}</Link>
+        <li>
+          <Link href={el.path} key={el.title} className="font-bold text-blue-900 hover:underline p-3 bg-transparent">{el.title}</Link>
+        </li >
       )))}
 
+    </>
 
-    </li >
   )
 }
 
