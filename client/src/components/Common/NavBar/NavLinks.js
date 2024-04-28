@@ -29,8 +29,8 @@ function NavLinks() {
       path: "/alumni",
     },
     {
-      title: "Adminstration",
-      path: "/adminstration",
+      title: "Administration",
+      path: "/administration",
     },
     {
       title: "login",
@@ -39,14 +39,14 @@ function NavLinks() {
   ];
 
   return (
-    <div>
+    <li>
 
       {links.map((el => (
-        <Link href={el.path} key={el.title} className="font-bold text-blue-900 hover:underline p-4">{el.title}</Link>
+        <Link href={el.path} key={el.title} className="font-bold text-blue-900 hover:underline p-4 bg-transparent">{el.title}</Link>
       )))}
 
 
-    </div >
+    </li >
   )
 }
 
