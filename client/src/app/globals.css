@@ -24,3 +24,23 @@
 ::-webkit-scrollbar-thumb :hover {
   background-color: blanchedalmond;
 }
+
+
+
+
+
+/* ============================= */
+/* scroll Animation css */
+.soumojitanibox {
+  overflow: hidden;
+  transform: translateX(30%);
+  transition: transform 0.7s ease-in-out;
+}
+
+/* .soumojitanibox:nth-of-type(even) {
+  transform: translateY(0%);
+} */
+
+.soumojitanibox.show {
+  transform: translateX(0);
+}

@@ -13,7 +13,7 @@ export default function Navbar() {
 
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           {/* college name and logo  */}
-          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link href="/" className="flex soumojitanibox  items-center space-x-3 rtl:space-x-reverse">
             <img src="collegelogo.png" className="h-6 md:h-8 lg:h-10" alt="Flowbite Logo" />
             <div className="font-bold  font-serif text-xs sm:text-lg text-blue-900 ">
               ACADEMY OF TECHNOLOGY
@@ -55,7 +55,7 @@ export default function Navbar() {
             </div>
             <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 rounded-lg  dark:text-white" placeholder="Search..." />
           </div>
-          <ul className="flex flex-col p-2 md:p-0 font-medium md:flex-row md:mt-0 md:border-0 dark:border-gray-700"><NavLinks /></ul>
+          <ul className="flex soumojitanibox flex-col p-2 md:p-0 font-medium md:flex-row md:mt-0 md:border-0 dark:border-gray-700"><NavLinks /></ul>
         </div>
       </nav>
     </div>
