@@ -6,6 +6,7 @@ import Navbar from "@/components/Common/NavBar/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASEURL),
   title: 'Academy of Technology',
   description: 'Academy of Technology',
   generator: 'Next.js',
