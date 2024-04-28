@@ -14,10 +14,10 @@ export default function Navbar() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           {/* college name and logo  */}
           <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="collegelogo.png" className="h-4 md:h-6 lg:h-8" alt="Flowbite Logo" />
-            <div className="font-bold  font-serif text-sm md:text-md lg:text-lg text-blue-900 ">
+            <img src="collegelogo.png" className="h-6 md:h-8 lg:h-10" alt="Flowbite Logo" />
+            <div className="font-bold  font-serif text-xs sm:text-lg text-blue-900 ">
               ACADEMY OF TECHNOLOGY
-              <div className=" text-xs text-right ">
+              <div className="text-[10px] sm:text-xs text-right ">
                 ....translate your vision into reality
               </div>
             </div>

@@ -24,7 +24,7 @@ const SignInForm = () => {
 	return (
 		<div className="flex flex-col items-center justify-center mx-auto">
 
-			<div className="w-full m-2 mt-4 shadow dark:border sm:max-w-md  dark:bg-gray-800 dark:border-gray-700 rounded-lg backdrop-blur-lg shadow-blue-950 shadow-4xl">
+			<div className="w-full m-2 mt-8 shadow dark:border sm:max-w-md  dark:bg-gray-800 dark:border-gray-700 rounded-lg backdrop-blur-lg shadow-blue-950 shadow-4xl">
 				<div className="p-6 space-y-4 md:space-y-6 sm:p-8">
 					<h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
 						{LogSign ?

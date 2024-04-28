@@ -29,7 +29,7 @@
     }
 
     to {
-        transform: translateX(-20%);
+        transform: translateX(-120%);
         /* Adjust as needed based on the number of notices */
     }
 }

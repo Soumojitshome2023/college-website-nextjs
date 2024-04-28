@@ -40,11 +40,11 @@ function NavLinks() {
 
   return (
     <>
-      {links.map((el => (
-        <li>
-          <Link href={el.path} key={el.title} className="font-bold text-blue-900 hover:underline p-3 bg-transparent">{el.title}</Link>
+      {links.map((el, index) => (
+        <li key={index}>
+          <Link href={el.path} className="font-bold text-blue-900 hover:underline p-3 bg-transparent">{el.title}</Link>
         </li >
-      )))}
+      ))}
 
     </>
 

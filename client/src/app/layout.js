@@ -19,28 +19,28 @@ export const metadata = {
   publisher: 'Soumojit Shome',
 
   icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
+    icon: '/logo.jpeg',
+    shortcut: '/logo.jpeg',
+    apple: '/logo.jpeg',
     other: {
       rel: 'apple-touch-icon-precomposed',
-      url: '/logo.png',
+      url: '/logo.jpeg',
     },
   },
 
   openGraph: {
     title: 'Academy of Technology',
     description: 'Academy of Technology',
-    url: '/logo.png',
+    url: '/logo.jpeg',
     siteName: 'Academy of Technology',
     images: [
       {
-        url: '/logo.png', // Must be an absolute URL
+        url: '/logo.jpeg', // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: '/logo.png', // Must be an absolute URL
+        url: '/logo.jpeg', // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: 'Academy of Technology',

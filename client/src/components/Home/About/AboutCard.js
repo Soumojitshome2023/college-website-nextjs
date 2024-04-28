@@ -3,8 +3,9 @@ import React from 'react'
 export default function AboutCard() {
     return (
         <>
+            <h1 className="m-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">About</span> Us :</h1>
             <section className="text-gray-600 body-font">
-                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                         <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
                     </div>

@@ -4,6 +4,7 @@ import { CarouselCompo } from '@/components/Home/Carousel/Carousel'
 import AboutCard from '@/components/Home/About/AboutCard'
 import EventCard from '@/components/Home/EventCard/EventCard'
 import NoticeLine from '@/components/Home/NoticeLine/NoticeLine'
+import Accordion from '@/components/Home/Accordion/Accordion'
 
 
 // ==================== Home Page ==================== 
@@ -24,6 +25,7 @@ export default function page() {
       <NoticeLine notices={notices} />
       <AboutCard />
       <EventCard />
+      <Accordion />
     </div>
   )
 }
