@@ -29,9 +29,9 @@ export default function Navbar() {
               <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
-              <span className="sr-only">Search icon</span>
+
             </div>
-            <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." />
+            <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-md rounded-2xl bg-[#C1CFFF] opacity-50 outline-none border-none text-blue-900" placeholder="Search..." />
           </div>
 
           {/* Hamburger */}
@@ -53,7 +53,7 @@ export default function Navbar() {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
             </div>
-            <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 rounded-lg  dark:text-white" placeholder="Search..." />
+            <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-md text-blue-900 rounded-xl border-none opacity-50 bg-[#C1CFFF] placeholder-blue-900" placeholder="Search..." />
           </div>
           <ul className="flex soumojitanibox flex-col p-2 md:p-0 font-medium md:flex-row md:mt-0 md:border-0 dark:border-gray-700"><NavLinks /></ul>
         </div>
