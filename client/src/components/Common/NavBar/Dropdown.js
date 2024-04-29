@@ -16,7 +16,7 @@ function Dropdown({ data }) {
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
                     {data.links.map((el, index) => (
                         <li key={index}>
-                            <Link href={"/academics" + el.path} className="block px-4 py-2 font-bold text-blue-900 hover:underline bg-transparent transition duration-300 ease-in-out transform hover:scale-110">{el.title}</Link >
+                            <Link href={el.path} className="block px-4 py-2 font-bold text-blue-900 hover:underline bg-transparent transition duration-300 ease-in-out transform hover:scale-110">{el.title}</Link >
                         </li>
                     ))}
 
