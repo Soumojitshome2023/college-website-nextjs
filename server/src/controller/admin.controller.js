@@ -131,6 +131,15 @@ const getAdmin = async (req, res) => {
     }
 };
 
+const adminLogout = async (req,res) => {
+    req.admin = null;
+    return res
+    .status(201)
+    .clearCookie("accessToken")
+    .clearCookie("refreshToken")
+    .json({success:true,message:'admin logged out successfully'})
+}
+
 const getAccessToken = async (req, res) => {
     try {
         const { refreshToken } = req.cookies;
@@ -198,5 +207,6 @@ module.exports = {
     createAccount,
     adminLogin,
     getAdmin,
-    getAccessToken
+    getAccessToken,
+    adminLogout
 };
