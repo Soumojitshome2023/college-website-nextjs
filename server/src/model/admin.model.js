@@ -24,9 +24,7 @@ const adminSchema = new mongoose.Schema({
         required : true,
         unique : true
     },
-    profileURL : {
-        type : String
-    }
+    refreshToken : String
 },{timestamps : true})
 
 module.exports = mongoose.model("Admin",adminSchema);
