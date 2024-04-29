@@ -1,14 +1,8 @@
-const express = require("express");
-const dotenv = require("dotenv");
+const app = require("./src/app.js");
+const connectDB = require("./src/database/database.js");
 
-dotenv.config(".env");
-
-const app = express();
-
-app.get("/", (req, res) => {
-    res.send("Working");
-});
+connectDB();
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server is running at port: ${process.env.PORT}`);
+    console.log(`Server started at ${process.env.PORT}`);
 });
