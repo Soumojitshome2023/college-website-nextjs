@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 
 const createAccount = async (req, res) => {
     try {
-        const { name, username, email, password, profileURL } = req.body;
+        const { name, username, email, contact, password, profileURL } = req.body;
 
         if (
             [name, username, email, password].some((field) => {
@@ -29,6 +29,7 @@ const createAccount = async (req, res) => {
             name,
             email,
             username,
+            contact,
             profileURL,
             password: hashedPass,
         });
