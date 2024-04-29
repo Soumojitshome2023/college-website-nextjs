@@ -29,8 +29,8 @@ function NavLinks() {
       isDropdown: true,
       links1: [
         {
-          title: "Login",
-          path: "/login",
+          title: "departments",
+          path: "/departments",
         },
         {
           title: "Login",

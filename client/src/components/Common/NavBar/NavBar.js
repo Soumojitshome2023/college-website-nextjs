@@ -13,7 +13,7 @@ export default function Navbar() {
 
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           {/* college name and logo  */}
-          <Link href="/" className="flex soumojitanibox  items-center space-x-3 rtl:space-x-reverse">
+          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/collegelogo.png" className="h-6 md:h-8 lg:h-10" alt="AOT Logo" />
             <div className="font-bold  font-serif text-xs sm:text-lg text-blue-900 ">
               ACADEMY OF TECHNOLOGY
