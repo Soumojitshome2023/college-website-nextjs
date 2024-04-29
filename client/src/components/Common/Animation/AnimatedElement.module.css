@@ -1,0 +1,15 @@
+/* components/AnimatedElement.module.css */
+
+.animatedElement {
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    /* Animation duration and timing function */
+}
+
+.visible {
+    opacity: 1;
+    /* Fade in when visible */
+    transform: translateY(0);
+    /* Move up when visible */
+}

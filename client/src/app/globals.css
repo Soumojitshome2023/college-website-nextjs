@@ -12,7 +12,7 @@
 /* Scrollbar css */
 ::-webkit-scrollbar {
   width: 6px;
-  width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -30,19 +30,22 @@
 
 /* ============================= */
 /* scroll Animation css */
-.soumojitanibox {
-  overflow: hidden;
-  /* transform: translateY(40%); */
-  /* transition: transform 1s ease-in; */
 
-  opacity: 0;
-  transition: opacity 1.5s linear;
+.scroll-watcher {
+  height: 4px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #5B70F5;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(Y);
 }
 
-/* .soumojitanibox:nth-of-type(even) {
-  transform: translateY(0%);
-} */
-.soumojitanibox.show {
-  /* transform: translateY(0); */
-  opacity: 1;
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
 }

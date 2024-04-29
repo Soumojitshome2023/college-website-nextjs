@@ -27,10 +27,11 @@ function NavLinks() {
     },
     {
       isDropdown: true,
-      links1: [
+      title: "Others",
+      links: [
         {
-          title: "Login",
-          path: "/login",
+          title: "Departments",
+          path: "/academics/departments",
         },
         {
           title: "Login",
@@ -55,26 +56,17 @@ function NavLinks() {
 
   return (
     <>
-      {links.map((el, index) => {
-        return (
-          <React.Fragment key={index}>
-
-            {(el.isDropdown) ?
-
-              <Dropdown data={el.links1} /> :
-
-
-
-              <li className="m-1 transition duration-300 ease-in-out transform hover:scale-110">
-                <Link href={el.path} className="font-bold text-blue-900 hover:underline p-3 bg-transparent">{el.title}</Link>
-              </li >
-
-            }
-
-          </React.Fragment>
-        )
-      })}
-
+      {links.map((el, index) => (
+        <React.Fragment key={index}>
+          {(el.isDropdown) ?
+            <Dropdown data={el} />
+            :
+            <li className="m-1 transition duration-300 ease-in-out transform hover:scale-110">
+              <Link href={el.path} className="font-bold text-blue-900 hover:underline px-3 bg-transparent">{el.title}</Link>
+            </li >
+          }
+        </React.Fragment>
+      ))}
     </>
 
   )

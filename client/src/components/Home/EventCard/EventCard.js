@@ -1,3 +1,4 @@
+import AnimatedElement from '@/components/Common/Animation/AnimatedElement'
 import React from 'react'
 
 export default function EventCard() {
@@ -5,10 +6,11 @@ export default function EventCard() {
 		<>
 			<section className="text-gray-600 body-font">
 				<div className="container px-5 py-24 mx-auto overflow-x-hidden">
+
 					<div className="flex flex-wrap -m-4">
 
 						{/* Card  */}
-						<div className="p-4 md:w-1/3 soumojitanibox">
+						<AnimatedElement className="p-4 md:w-1/3 ">
 							<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
 								<img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/collegepic(3).jpg" alt="blog" />
 								<div className="p-6">
@@ -36,9 +38,9 @@ export default function EventCard() {
 									</div>
 								</div>
 							</div>
-						</div>
+						</AnimatedElement>
 
-						<div className="p-4 md:w-1/3 soumojitanibox">
+						<AnimatedElement className="p-4 md:w-1/3 ">
 							<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
 								<img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/collegepic(4).jpg" alt="blog" />
 								<div className="p-6">
@@ -66,9 +68,10 @@ export default function EventCard() {
 									</div>
 								</div>
 							</div>
-						</div>
+						</AnimatedElement>
 
-						<div className="p-4 md:w-1/3 soumojitanibox">
+
+						<AnimatedElement className="p-4 md:w-1/3 ">
 							<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
 								<img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/collegepic(5).jpg" alt="blog" />
 								<div className="p-6">
@@ -96,10 +99,10 @@ export default function EventCard() {
 									</div>
 								</div>
 							</div>
-						</div>
-
+						</AnimatedElement>
 
 					</div>
+
 				</div>
 			</section>
 		</>

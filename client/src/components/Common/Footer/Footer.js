@@ -1,4 +1,5 @@
 import React from 'react'
+import AnimatedElement from '../Animation/AnimatedElement'
 
 export default function Footer() {
 
@@ -8,12 +9,13 @@ export default function Footer() {
         <div className="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
 
           {/* G Map  */}
-          <div className='soumojitanibox rounded-lg'>
+          <AnimatedElement className=' rounded-lg '>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.9295269261065!2d88.37397647408291!3d22.95282237922273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8930eeb863655%3A0xb3a6adf26d41d0b5!2sAcademy%20of%20Technology!5e0!3m2!1sen!2sin!4v1713956112554!5m2!1sen!2sin" width="100%" height="400" style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+          </AnimatedElement>
+
 
           {/* Footer Links  */}
-          <div className="soumojitanibox flex-grow flex flex-wrap mb-10 md:text-left text-center order-first">
+          <AnimatedElement className=" flex-grow flex flex-wrap mb-10 md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav className="list-none mb-10">
@@ -82,7 +84,7 @@ export default function Footer() {
                 </li>
               </nav>
             </div>
-            <div className="flex-col ml-4 soumojitanibox flex-grow flex flex-wrap mb-10 md:text-left text-balance">
+            <div className="flex-col ml-4  flex-grow flex flex-wrap mb-10 md:text-left text-balance">
               <h3 className=' font-bold text-xl'>Address</h3>
               <p>Grand Tank Road,</p>
               <p>Adisaptagram,</p>
@@ -91,8 +93,7 @@ export default function Footer() {
               <p className="email">academy.of.technology@aot.edu.in</p>
               <h4>+91 9883464589</h4>
             </div>
-          </div>
-
+          </AnimatedElement>
         </div>
 
         <div>
