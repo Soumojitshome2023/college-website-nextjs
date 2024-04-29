@@ -19,6 +19,11 @@ const adminSchema = new mongoose.Schema({
         required : true,
         unique : true
     },
+    contact : {
+        type : String,
+        required : true,
+        unique : true
+    },
     profileURL : {
         type : String
     }
