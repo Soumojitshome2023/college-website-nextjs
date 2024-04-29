@@ -101,9 +101,15 @@ const adminLogin = async (req, res) => {
         .status(200)
         .cookie("accessToken", accessToken, {
             maxAge: 60 * 60 * 1000 * 24 * 1,
+            secure : true,
+            httpOnly : true,
+            sameSite : 'none'
         })
         .cookie("refreshToken", refreshToken, {
             maxAge: 60 * 60 * 1000 * 24 * 7,
+            secure : true,
+            httpOnly : true,
+            sameSite : 'none'
         })
         .json({
             success: true,
@@ -165,9 +171,15 @@ const getAccessToken = async (req, res) => {
             .status(200)
             .cookie("accessToken", accessToken, {
                 maxAge: 60 * 60 * 1000 * 24 * 1,
+                secure : true,
+                httpOnly : true,
+                sameSite : 'none'
             })
             .cookie("refreshToken", newRefreshToken, {
                 maxAge: 60 * 60 * 1000 * 24 * 7,
+                secure : true,
+                httpOnly : true,
+                sameSite : 'none'
             })
             .json({
                 success: true,
