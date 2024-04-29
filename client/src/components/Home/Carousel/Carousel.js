@@ -1,22 +1,40 @@
 "use client"
 // ======================== Imports ========================
 import 'flowbite';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Carousel } from "flowbite-react";
 
 
 export function CarouselCompo() {
+	const [CarouselImages, setCarouselImages] = useState(null);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const response = await fetch('/data.json');
+				if (!response.ok) {
+					throw new Error('Failed to fetch data');
+				}
+				const data = await response.json();
+				setCarouselImages(data.CarouselImages);
+			} catch (error) {
+				console.error('Error fetching data:', error);
+			}
+		};
+		fetchData();
+	}, []);
+
+
 	return (
 
 		<div className=" h-52 md:h-[32rem]">
-			<Carousel>
-				<img src="/collegepic(1).jpg" alt="..." />
-				<img src="/collegepic(2).jpg" alt="..." />
-				<img src="/collegepic(3).jpg" alt="..." />
-				<img src="/collegepic(4).jpg" alt="..." />
-				<img src="/collegepic(5).jpg" alt="..." />
-
-			</Carousel>
+			{CarouselImages &&
+				<Carousel>
+					{CarouselImages.map((image, index) => (
+						<img key={index} src={image.ImageLink} alt="..." />
+					))}
+				</Carousel>
+			}
 		</div>
 	);
 }

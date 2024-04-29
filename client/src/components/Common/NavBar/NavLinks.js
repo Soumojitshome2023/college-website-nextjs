@@ -22,12 +22,8 @@ function NavLinks() {
       path: "/events",
     },
     {
-      title: "Academics",
-      path: "/academics",
-    },
-    {
       isDropdown: true,
-      title: "Others",
+      title: "Academics",
       links: [
         {
           title: "Departments",

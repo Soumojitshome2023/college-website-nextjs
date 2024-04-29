@@ -1,0 +1,86 @@
+{
+    "CarouselImages": [
+        {
+            "ImageLink": "/collegepic(1).jpg"
+        },
+        {
+            "ImageLink": "/collegepic(2).jpg"
+        },
+        {
+            "ImageLink": "/collegepic(3).jpg"
+        },
+        {
+            "ImageLink": "/collegepic(4).jpg"
+        },
+        {
+            "ImageLink": "/collegepic(5).jpg"
+        }
+    ],
+    "NoticeLineData": [
+        {
+            "Title": "Notice 1"
+        },
+        {
+            "Title": "Notice 2"
+        },
+        {
+            "Title": "Notice 3",
+            "Link": "demo"
+        },
+        {
+            "Title": "Notice 4"
+        }
+    ],
+    "DepartmentsData": [
+        {
+            "Title": "ECE",
+            "Description": "This is Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/ece",
+            "BannerPic": "/collegepic(1).jpg"
+        },
+        {
+            "Title": "CSE",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/cse",
+            "BannerPic": "/collegepic(2).jpg"
+        },
+        {
+            "Title": "EEE",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/eee",
+            "BannerPic": "/collegepic(3).jpg"
+        },
+        {
+            "Title": "ME",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/me",
+            "BannerPic": "/collegepic(4).jpg"
+        }
+    ],
+    "EventsData": [
+        {
+            "Title": "asd",
+            "Description": "This is Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/asd",
+            "BannerPic": "/collegepic(1).jpg"
+        },
+        {
+            "Title": "ddd",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/ddd",
+            "BannerPic": "/collegepic(2).jpg"
+        },
+        {
+            "Title": "wee",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/wee",
+            "BannerPic": "/collegepic(3).jpg"
+        },
+        {
+            "Title": "xzc",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/xzc",
+            "BannerPic": "/collegepic(4).jpg"
+        }
+    ]
+}

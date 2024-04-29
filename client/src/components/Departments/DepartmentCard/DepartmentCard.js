@@ -1,8 +1,8 @@
-import AnimatedElement from '@/components/Common/Animation/AnimatedElement'
 import React from "react";
 import Link from "next/link";
+import AnimatedElement from '@/components/Common/Animation/AnimatedElement'
 
-export default function EventCard({ data }) {
+export default function DepartmentCard({ data }) {
 	return (
 		<>
 			{/* Card  */}
