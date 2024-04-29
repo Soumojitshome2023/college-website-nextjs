@@ -12,11 +12,11 @@ function Dropdown({ data }) {
             </button>
 
             {/* <!-- Dropdown menu --> */}
-            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <div id="dropdownNavbar" className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 ">
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
                     {data.links.map((el, index) => (
                         <li key={index}>
-                            <Link href={el.path} className="block px-4 py-2 font-bold text-blue-900 hover:underline bg-transparent">{el.title}</Link>
+                            <Link href={"/academics" + el.path} className="block px-4 py-2 font-bold text-blue-900 hover:underline bg-transparent transition duration-300 ease-in-out transform hover:scale-110">{el.title}</Link >
                         </li>
                     ))}
 
