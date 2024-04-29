@@ -84,7 +84,8 @@ export default function Footer() {
                 </li>
               </nav>
             </div>
-            <div className="flex-col ml-4  flex-grow flex flex-wrap mb-10 md:text-left text-balance">
+
+            <div className="flex-col  flex-grow flex flex-wrap mb-10 md:text-left text-balance">
               <h3 className=' font-bold text-xl'>Address</h3>
               <p>Grand Tank Road,</p>
               <p>Adisaptagram,</p>
@@ -93,6 +94,7 @@ export default function Footer() {
               <p className="email">academy.of.technology@aot.edu.in</p>
               <h4>+91 9883464589</h4>
             </div>
+
           </AnimatedElement>
         </div>
 

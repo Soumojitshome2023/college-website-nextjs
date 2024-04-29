@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import styles from './NoticeLine.module.css';
+import FetchNoticeLineData from '@/Helper/FetchNoticeLineData';
 
 export default function NoticeLine() {
 
@@ -8,15 +8,9 @@ export default function NoticeLine() {
 
     useEffect(() => {
         const fetchData = async () => {
-            try {
-                const response = await fetch('/data.json');
-                if (!response.ok) {
-                    throw new Error('Failed to fetch data');
-                }
-                const data = await response.json();
-                setNoticeLineData(data.NoticeLineData);
-            } catch (error) {
-                console.error('Error fetching data:', error);
+            const res = await FetchNoticeLineData();
+            if (res.success) {
+                setNoticeLineData(res.data);
             }
         };
         fetchData();
@@ -26,19 +20,19 @@ export default function NoticeLine() {
         <div className="w-full p-2  shadow shadow-gray-800 drop-shadow-3xl">
 
             {NoticeLineData &&
-                <div className={styles.noticeContainer}>
-                    <div className={styles.noticeLine}>
+                <div className="w-full py-1">
+                    <marquee>
                         {NoticeLineData.map((notice, index) => (
-                            <a key={index} href={notice.Link ?? "#"} className={styles.noticeLink}>
+                            <a key={index} href={notice.Link ?? "#"} className="whitespace-nowrap text-xl font-bold font-serif text-gray-800 hover:text-gray-900 focus:text-gray-900 no-underline px-4 py-2">
                                 {notice.Title} |
                             </a>
                         ))}
-                        {/* {notices.map((notice, index) => (
+                    </marquee>
+                    {/* {notices.map((notice, index) => (
                         <a key={index + notices.length} href={notice.link} className={styles.noticeLink}>
                         {notice.text}
                         </a>
                     ))} */}
-                    </div>
                 </div>
             }
 
