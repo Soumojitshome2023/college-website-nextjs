@@ -4,7 +4,7 @@ import Link from "next/link";
 function Dropdown({ data }) {
     return (
 
-        <li className='font-bold text-blue-900 hover:underline p-1 bg-transparent'>
+        <li className='font-bold text-blue-900 hover:underline p-1 bg-transparent transition duration-300 ease-in-out transform hover:scale-110'>
             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full font-bold text-blue-900 hover:underline px-3 bg-transparent">{data.title}
                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />

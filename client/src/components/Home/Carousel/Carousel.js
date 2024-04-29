@@ -3,6 +3,7 @@
 import 'flowbite';
 import React, { useEffect, useState } from 'react'
 import { Carousel } from "flowbite-react";
+import FetchCarouselImages from '@/Helper/FetchCarouselImages';
 
 
 export function CarouselCompo() {
@@ -10,15 +11,9 @@ export function CarouselCompo() {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			try {
-				const response = await fetch('/data.json');
-				if (!response.ok) {
-					throw new Error('Failed to fetch data');
-				}
-				const data = await response.json();
-				setCarouselImages(data.CarouselImages);
-			} catch (error) {
-				console.error('Error fetching data:', error);
+			const res = await FetchCarouselImages();
+			if (res.success) {
+				setCarouselImages(res.data);
 			}
 		};
 		fetchData();

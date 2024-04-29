@@ -2,21 +2,16 @@
 import React, { useState, useEffect } from 'react';
 import DepartmentCard from '@/components/Departments/DepartmentCard/DepartmentCard'
 import AnimatedElement from '@/components/Common/Animation/AnimatedElement';
+import FetchDepartmentsData from '@/Helper/FetchDepartmentsData';
 
 export default function page() {
   const [DepartmentsData, setDepartmentsData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const response = await fetch('/data.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch data');
-        }
-        const data = await response.json();
-        setDepartmentsData(data.DepartmentsData);
-      } catch (error) {
-        console.error('Error fetching data:', error);
+      const res = await FetchDepartmentsData();
+      if (res.success) {
+        setDepartmentsData(res.data);
       }
     };
     fetchData();

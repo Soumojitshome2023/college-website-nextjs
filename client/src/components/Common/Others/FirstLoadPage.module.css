@@ -1,0 +1,48 @@
+.fadeContainer {
+  background-color: rgba(0, 0, 0, 1);
+  /* Initially black */
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+  /* Start with opacity 1 */
+  transition: opacity 0.5s ease-in-out;
+  /* Add transition for smooth opacity change */
+  z-index: 1000;
+}
+
+.fadeOut {
+  opacity: 0;
+  /* Reduce opacity to 0 to reveal content */
+}
+
+
+.btnshine {
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  /* background-position: 0; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  /* animation-fill-mode: forwards; */
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 1000px;
+  }
+}

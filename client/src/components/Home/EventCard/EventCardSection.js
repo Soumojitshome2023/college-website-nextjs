@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import EventCard from './EventCard'
 import AnimatedElement from '@/components/Common/Animation/AnimatedElement';
+import FetchEventsData from '@/Helper/FetchEventsData';
 
 export default function EventCardSection() {
 
@@ -9,15 +10,9 @@ export default function EventCardSection() {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			try {
-				const response = await fetch('/data.json');
-				if (!response.ok) {
-					throw new Error('Failed to fetch data');
-				}
-				const data = await response.json();
-				setEventsData(data.EventsData);
-			} catch (error) {
-				console.error('Error fetching data:', error);
+			const res = await FetchEventsData();
+			if (res.success) {
+				setEventsData(res.data);
 			}
 		};
 		fetchData();

@@ -8,39 +8,15 @@ import AnimatedElement from '../Animation/AnimatedElement';
 
 export default function Navbar() {
 
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     const handleScroll = () => {
-  //       const boxes = document.querySelectorAll('.');
-  //       const triggerBottom = window.innerHeight / 5 * 4;
-
-  //       boxes.forEach(box => {
-  //         const boxTop = box.getBoundingClientRect().top;
-
-  //         if (boxTop < triggerBottom) {
-  //           box.classList.add('show');
-  //         } else {
-  //           box.classList.remove('show');
-  //         }
-  //       });
-  //     };
-  //     window.addEventListener('scroll', handleScroll);
-  //     handleScroll(); // Call initially to check boxes on mount
-  //     return () => {
-  //       window.removeEventListener('scroll', handleScroll);
-  //     };
-  //   }
-  // }, []);
-
   return (
     <>
       <div className='sticky bg-white bg-opacity-40 top-0 z-50 backdrop-blur-2xl transform transition-all duration-1000 ease-in-out'>
         <nav className="bg-transparent">
-          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2">
+
             {/* college name and logo  */}
             <Link href="/" className="flex   items-center space-x-3 rtl:space-x-reverse">
               <img src="/collegelogo.png" className="h-6 md:h-8 lg:h-10" alt="AOT Logo" />
-
               <AnimatedElement className="font-bold  font-serif text-xs sm:text-lg text-blue-900 ">
                 ACADEMY OF TECHNOLOGY
                 <div className="text-[10px] sm:text-xs text-right ">
