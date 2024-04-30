@@ -1,34 +1,26 @@
+import axios from "axios";
 export const AdminSignUp = (name, username, email, contact, password, profileURL) => {
     return new Promise(async (resolve, reject) => {
         try {
             // Fetch API
             const fetchlink = process.env.NEXT_PUBLIC_SERVERURL;
-            let result = await fetch(fetchlink + "/api/v1/admin/signup", {
-                method: "POST",
-                headers: {
-                    'Content-Type': 'application/json'
+            const { data } = await axios.post(fetchlink + "/api/v1/admin/signup",
+                {
+                    "name": name,
+                    "username": username,
+                    "email": email,
+                    "contact": contact,
+                    "password": password,
+                    "profileURL": profileURL
                 },
-                body: JSON.stringify(
-                    {
-                        "name": name,
-                        "username": username,
-                        "email": email,
-                        "contact": contact,
-                        "password": password,
-                        "profileURL": profileURL
-                    }
-                ),
-                withCredentials: true
-            });
-
-            const data = await result.json();
+                {
+                    withCredentials: true
+                }
+            );
             resolve(data);
         } catch (error) {
             console.error('Error fetching data:', error);
-            reject({
-                message: error.message,
-                success: false
-            });
+            reject(error.response.data);
         }
     })
 }

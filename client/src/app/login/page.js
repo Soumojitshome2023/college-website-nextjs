@@ -26,20 +26,28 @@ const SignInForm = () => {
 
 	const SignUpBtnHandel = async () => {
 		setRingLoad(true);
-		const res = await AdminSignUp(Name, UserName, Email, Contact, Password, ProfilePicURL);
-		setRingLoad(false);
-		if (res.success) {
+		try {
+			const res = await AdminSignUp(Name, UserName, Email, Contact, Password, ProfilePicURL);
+			// if (res.success) {
+			// }
+			setShowMessage(res.message);
+		} catch (error) {
+			setShowMessage(error.message);
 		}
-		setShowMessage(res.message);
+		setRingLoad(false);
 	}
 
 	const LogInBtnHandel = async () => {
 		setRingLoad(true);
-		const res = await AdminLogIn(Email, Password);
-		setRingLoad(false);
-		if (res.success) {
+		try {
+			const res = await AdminLogIn(Email, Password);
+			// if (res.success) {
+			// }
+			setShowMessage(res.message);
+		} catch (error) {
+			setShowMessage(error.message);
 		}
-		setShowMessage(res.message);
+		setRingLoad(false);
 	}
 
 
