@@ -9,7 +9,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "author": "NextGenDev",
+  "author": "Ritesh Pramanik",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
