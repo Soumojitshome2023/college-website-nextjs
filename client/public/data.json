@@ -34,86 +34,86 @@
     "DepartmentsData": [
         {
             "Title": "ECE",
-            "Description": "This is Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Keyword": "ece",
+            "Description": "4 yrs B. Tech programme in Electronics & Communication Engineering. HOD: Dr. Abhijit Banerjee.",
             "PageLink": "/academics/departments/ece",
             "BannerPic": "/images/Department-of-Electronics-Communication-Engineering-Image.jpg",
-            "pageRouteData": {
+            "PageRouteData": {
                 "DepartmentName": "Department of Electronics & Communication Engineering",
                 "YearofEstablishment": "July 2003",
                 "HODname": "Dr. Abhijit Banerjee.",
-                "HOdContactMailId": "hod_ece@aot.edu.in",
-                "OverviewofDepartmentalInfrastructure": "Class Tutorial Rooms Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms. Amenities Area.",
-                "DepartmentStaticData": "/departmentHTML/ECE.md"
+                "HODContactMailId": "hod_ece@aot.edu.in",
+                "DepartmentStaticData": "/DepartmentMD/ECE.md"
             }
         },
         {
             "Title": "CSE",
-            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Keyword": "cse",
+            "Description": "4 yrs B.Tech programme in Computer Science & Engineering. HOD: Prof. Prosenjit Das",
             "PageLink": "/academics/departments/cse",
-            "BannerPic": "/collegepic(2).jpg",
-            "pageRouteData": {
-                "DepartmentName": "Department of Electronics & Communication Engineering",
+            "BannerPic": "/collegepic(1).jpg",
+            "PageRouteData": {
+                "DepartmentName": "Department of Computer Science & Engineering",
                 "YearofEstablishment": "July 2003",
                 "HODname": "Prof. Prosenjit Das",
-                "HOdContactMailId": "hod_cse@aot.edu.in",
-                "OverviewofDepartmentalInfrastructure": "Class / Tutorial Rooms/ Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms. Amenities Area.",
-                "DepartmentStaticData": "/departmentHTML/CSE.md"
+                "HODContactMailId": "hod_cse@aot.edu.in",
+                "DepartmentStaticData": "/DepartmentMD/CSE.md"
             }
         },
         {
             "Title": "CSBS",
-            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/cse",
+            "Keyword": "csbs",
+            "Description": "4 yrs B.Tech programme in Computer Science & Business Systems. HOD: Prof. Suman Bhattacharyya",
+            "PageLink": "/academics/departments/csbs",
             "BannerPic": "/collegepic(2).jpg",
-            "pageRouteData": {
-                "DepartmentName": "Department of Electronics & Communication Engineering",
+            "PageRouteData": {
+                "DepartmentName": "Department of Computer Science & Business Systems",
                 "YearofEstablishment": "July 2020",
                 "HODname": "Prof. Suman Bhattacharyya.",
-                "HOdContactMailId": "hod_csbs@aot.edu.in",
-                "OverviewofDepartmentalInfrastructure": "Class / Tutorial Rooms/ Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms.Amenities Area.",
-                "DepartmentStaticData": "/departmentHTML/CSBS.md"
+                "HODContactMailId": "hod_csbs@aot.edu.in",
+                "DepartmentStaticData": "/DepartmentMD/CSBS.md"
             }
         },
         {
             "Title": "EE",
-            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/cse",
-            "BannerPic": "/collegepic(2).jpg",
-            "pageRouteData": {
-                "DepartmentName": "Department of Electronics & Communication Engineering",
+            "Keyword": "ee",
+            "Description": "4 yrs. B. Tech. programme in Electrical Engineering. HOD: Prof. Sandip Saha Chowdhury",
+            "PageLink": "/academics/departments/ee",
+            "BannerPic": "/collegepic(3).jpg",
+            "PageRouteData": {
+                "DepartmentName": "Department of Electrical Engineering",
                 "YearofEstablishment": "July 2003",
                 "HODname": "Prof. Sandip Saha Chowdhury",
-                "HOdContactMailId": "hod_ee@aot.edu.in",
-                "OverviewofDepartmentalInfrastructure": "Class / Tutorial Rooms HOD’s Room & Departmental OfficeFaculty Rooms,Departmental Internet Centre & e-Library,Amenities Area.",
-                "DepartmentStaticData": "/departmentHTML/EE.md"
+                "HODContactMailId": "hod_ee@aot.edu.in",
+                "DepartmentStaticData": "/DepartmentMD/EE.md"
             }
         },
         {
             "Title": "EEE",
-            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Keyword": "eee",
+            "Description": "4 yrs B.Tech. programme in Electrical & Electronics Engineering. HOD : Prof. Hiranmoy Mondal",
             "PageLink": "/academics/departments/eee",
-            "BannerPic": "/collegepic(3).jpg",
-            "pageRouteData": {
-                "DepartmentName": "Department of Electronics & Communication Engineering",
+            "BannerPic": "/collegepic(4).jpg",
+            "PageRouteData": {
+                "DepartmentName": "Department of Electrical & Electronics Engineering",
                 "YearofEstablishment": "July 2020",
                 "HODname": "Prof. Hiranmoy Mondal",
-                "HOdContactMailId": "hod_eee@aot.edu.in",
-                "OverviewofDepartmentalInfrastructure": "Class Tutorial Rooms Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms. Amenities Area.",
-                "DepartmentStaticData": "/departmentHTML/EEE.md"
+                "HODContactMailId": "hod_eee@aot.edu.in",
+                "DepartmentStaticData": "/DepartmentMD/EEE.md"
             }
         },
         {
             "Title": "ME",
-            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Keyword": "me",
+            "Description": "4 yrs B.Tech. programme in Mechanical Engineering. HOD: Prof. Niloy Ghosh",
             "PageLink": "/academics/departments/me",
-            "BannerPic": "/collegepic(4).jpg",
-            "pageRouteData": {
+            "BannerPic": "/images/Department-of-Mechanical-Engineering-Image.jpg",
+            "PageRouteData": {
                 "DepartmentName": "Department of Mechanical Engineering",
                 "YearofEstablishment": "July 2009",
                 "HODname": " Prof. Niloy Ghosh",
-                "HOdContactMailId": "hod_me@aot.edu.in",
-                "OverviewofDepartmentalInfrastructure": "Class / Tutorial Rooms/ Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms.Amenities Area..",
-                "DepartmentStaticData": "/departmentHTML/ME.md"
+                "HODContactMailId": "hod_me@aot.edu.in",
+                "DepartmentStaticData": "/DepartmentMD/ME.md"
             }
         }
     ],
