@@ -19,7 +19,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.10.0",
-    "react-loader-spinner": "^6.1.6"
+    "react-loader-spinner": "^6.1.6",
+    "soumojit-markdownparser": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",

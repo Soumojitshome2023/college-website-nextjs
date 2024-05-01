@@ -36,25 +36,85 @@
             "Title": "ECE",
             "Description": "This is Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "PageLink": "/academics/departments/ece",
-            "BannerPic": "/collegepic(1).jpg"
+            "BannerPic": "/images/Department-of-Electronics-Communication-Engineering-Image.jpg",
+            "pageRouteData": {
+                "DepartmentName": "Department of Electronics & Communication Engineering",
+                "YearofEstablishment": "July 2003",
+                "HODname": "Dr. Abhijit Banerjee.",
+                "HOdContactMailId": "hod_ece@aot.edu.in",
+                "OverviewofDepartmentalInfrastructure": "Class Tutorial Rooms Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms. Amenities Area.",
+                "DepartmentStaticData": "/departmentHTML/ECE.md"
+            }
         },
         {
             "Title": "CSE",
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "PageLink": "/academics/departments/cse",
-            "BannerPic": "/collegepic(2).jpg"
+            "BannerPic": "/collegepic(2).jpg",
+            "pageRouteData": {
+                "DepartmentName": "Department of Electronics & Communication Engineering",
+                "YearofEstablishment": "July 2003",
+                "HODname": "Prof. Prosenjit Das",
+                "HOdContactMailId": "hod_cse@aot.edu.in",
+                "OverviewofDepartmentalInfrastructure": "Class / Tutorial Rooms/ Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms. Amenities Area.",
+                "DepartmentStaticData": "/departmentHTML/CSE.md"
+            }
+        },
+        {
+            "Title": "CSBS",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/cse",
+            "BannerPic": "/collegepic(2).jpg",
+            "pageRouteData": {
+                "DepartmentName": "Department of Electronics & Communication Engineering",
+                "YearofEstablishment": "July 2020",
+                "HODname": "Prof. Suman Bhattacharyya.",
+                "HOdContactMailId": "hod_csbs@aot.edu.in",
+                "OverviewofDepartmentalInfrastructure": "Class / Tutorial Rooms/ Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms.Amenities Area.",
+                "DepartmentStaticData": "/departmentHTML/CSBS.md"
+            }
+        },
+        {
+            "Title": "EE",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/cse",
+            "BannerPic": "/collegepic(2).jpg",
+            "pageRouteData": {
+                "DepartmentName": "Department of Electronics & Communication Engineering",
+                "YearofEstablishment": "July 2003",
+                "HODname": "Prof. Sandip Saha Chowdhury",
+                "HOdContactMailId": "hod_ee@aot.edu.in",
+                "OverviewofDepartmentalInfrastructure": "Class / Tutorial Rooms HOD’s Room & Departmental OfficeFaculty Rooms,Departmental Internet Centre & e-Library,Amenities Area.",
+                "DepartmentStaticData": "/departmentHTML/EE.md"
+            }
         },
         {
             "Title": "EEE",
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "PageLink": "/academics/departments/eee",
-            "BannerPic": "/collegepic(3).jpg"
+            "BannerPic": "/collegepic(3).jpg",
+            "pageRouteData": {
+                "DepartmentName": "Department of Electronics & Communication Engineering",
+                "YearofEstablishment": "July 2020",
+                "HODname": "Prof. Hiranmoy Mondal",
+                "HOdContactMailId": "hod_eee@aot.edu.in",
+                "OverviewofDepartmentalInfrastructure": "Class Tutorial Rooms Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms. Amenities Area.",
+                "DepartmentStaticData": "/departmentHTML/EEE.md"
+            }
         },
         {
             "Title": "ME",
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "PageLink": "/academics/departments/me",
-            "BannerPic": "/collegepic(4).jpg"
+            "BannerPic": "/collegepic(4).jpg",
+            "pageRouteData": {
+                "DepartmentName": "Department of Mechanical Engineering",
+                "YearofEstablishment": "July 2009",
+                "HODname": " Prof. Niloy Ghosh",
+                "HOdContactMailId": "hod_me@aot.edu.in",
+                "OverviewofDepartmentalInfrastructure": "Class / Tutorial Rooms/ Seminar Rooms.HOD’s Room & Departmental Office.Faculty Rooms.Amenities Area..",
+                "DepartmentStaticData": "/departmentHTML/ME.md"
+            }
         }
     ],
     "EventsData": [
@@ -81,6 +141,39 @@
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "PageLink": "/academics/departments/xzc",
             "BannerPic": "/collegepic(4).jpg"
+        }
+    ],
+    "CarrierAtAotData": [
+        {
+            "Title": "Flexible working hours",
+            "Description": "Retired Professors recruited from premier institutes/ senior professionals from R & D organizations/ corporates may be considered for flexible working hours, i.e. 45 to 60 working days in a semester, @ 3 to 4 days per week considering 15 teaching weeks in a semester. Partially online teaching options may also be considered."
+        },
+        {
+            "Title": "Higher scale of pay:",
+            "Description": "AOT provides competitive pay packages that exceed those for same positions in peer institutes. Assistant Professors with 6yrs of full time teaching/ research experience after M.Tech and registered for PhD, will be eligible for post of Assistant Professor [Senior Scale], compared to the 10yrs requirement in AICTE norms. Assistant Professors with 10yrs of full time teaching and research experience after M.Tech, already registered for PhD & with at least one publication in SCI indexed journals will be eligible for post of Assistant Professor [Selection Grade], which is highly flexible compared to AICTE norms."
+        },
+        {
+            "Title": "Career development opportunity",
+            "Description": "Ample scope provided to engage in innovation and research in a vibrant and collaborative environment. Conducive atmosphere to develop your potential to the fullest and performance-based incentives. Mentoring by experiences academicians/ industry experts for new faculty."
+        },
+        {
+            "Title": "360 degree support for research and publication:",
+            "Description": "For all teaching posts, in addition to salary, incentives will be paid for career development, publication, patent, work on Govt. & industry sponsored project, attending conferences, faculty development programs, etc. as per institute norms. Dedicated research labs on Industry 4.0 technologies in the pipeline."
+        },
+        {
+            "Title": "Recruitment advertisement December 2023",
+            "PostLocation": "Published in Anandabazar Patrika & Telegraph on 12.12.23",
+            "Link": "/files/Add_12_12_23.pdf"
+        },
+        {
+            "Title": "Recruitment advertisement 2023",
+            "PostLocation": "Published in Anandabazar Patrika & Telegraph on 12.12.23",
+            "Link": "https://aot.edu.in/wp-content/uploads/2023/12/Add_12_12_23.pdf"
+        },
+        {
+            "Title": "Recruitment advertisement 2023",
+            "PostLocation": "Published in Anandabazar Patrika & Telegraph on 12.12.23",
+            "Link": "https://aot.edu.in/wp-content/uploads/2023/12/Add_12_12_23.pdf"
         }
     ]
 }
