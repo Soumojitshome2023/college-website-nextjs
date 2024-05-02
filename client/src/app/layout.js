@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Common/Footer/Footer";
 import Navbar from "@/components/Common/NavBar/NavBar";
 import FirstLoadPage from "@/components/Common/Others/FirstLoadPage";
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -61,9 +62,14 @@ export default function RootLayout({ children }) {
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className={`${inter.className} min-h-screen `}>
-        <div>
+        {/* <div>
           <img src="/background.png" className=" h-screen w-full fixed top-0 left-0 -z-50" />
-        </div>
+        </div> */}
+         <NextTopLoader color="#FF0000"
+            initialPosition={0.08}
+            height={4}
+            crawl={true}
+            showSpinner={false} />
         <Navbar />
 
         {/* <div className=" min-h-screen overflow-x-hidden">

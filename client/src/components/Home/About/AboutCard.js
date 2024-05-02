@@ -5,18 +5,18 @@ export default function AboutCard() {
     return (
         <>
             <AnimatedElement>
-                <h1 className="m-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">About</span> Us :</h1>
+                <h1 className="m-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">| ABOUT</span> AOT :</h1>
             </AnimatedElement>
 
             <AnimatedElement>
                 <section className="text-gray-600 body-font ">
-                    <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
-                        <div className="lg:max-w-lg lg:w-full flex justify-center items-center  md:w-1/2 w-5/6 mb-10 md:mb-0">
-                            <img className="object-cover h-48 md:h-full object-center rounded" alt="hero" src="/collegepic(1).jpg" />
+                    <div className="mx-auto flex py-10 md:px-5 md:flex-row justify-center flex-col items-center">
+                        <div className="md:max-w-sm lg:max-w-md md:h-full w-full h-48 overflow-hidden flex justify-center items-center mb-4 md:mb-0">
+                            {/* <img className="w-full md:rounded-lg" alt="hero" src="/images/collegepic(1).jpg" /> */}
+                            <video className="w-full md:rounded-lg" alt="hero" src='/Video/AOTCampus.mp4' autoPlay muted loop/>
                         </div>
-                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-                                <br className="hidden lg:inline-block" />readymade gluten
+                        <div className="md:w-1/2  md:pl-8 flex flex-col md:items-start md:text-left items-center text-center">
+                            <h1 className="title-font lg:text-3xl text-2xl mb-4 font-medium text-gray-900">Before they sold out readymade gluten
                             </h1>
                             <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
                         </div>
@@ -27,16 +27,14 @@ export default function AboutCard() {
 
             <AnimatedElement>
                 <section className="text-gray-600 body-font ">
-                    <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col-reverse items-center">
-                        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-                                <br className="hidden lg:inline-block" />readymade gluten
+                    <div className="mx-auto flex py-10 md:px-5 md:flex-row-reverse justify-center flex-col items-center">
+                        <div className="md:max-w-sm lg:max-w-md md:h-full w-full h-48 overflow-hidden flex justify-center items-center mb-4 md:mb-0">
+                            <img className="w-full md:rounded-lg" alt="hero" src="/images/collegepic(1).jpg" />
+                        </div>
+                        <div className="md:w-1/2 md:pr-8 flex flex-col md:items-start md:text-left items-center text-center">
+                            <h1 className="title-font lg:text-3xl text-2xl mb-4 font-medium text-gray-900">Before they sold out readymade gluten
                             </h1>
                             <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-
-                        </div>
-                        <div className="lg:max-w-lg lg:w-full flex justify-center items-center  md:w-1/2 w-5/6 mb-10 md:mb-0">
-                            <img className="object-cover h-48 md:h-full object-center rounded" alt="hero" src="/collegepic(1).jpg" />
                         </div>
                     </div>
                 </section>

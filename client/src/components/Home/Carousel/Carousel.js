@@ -22,7 +22,7 @@ export function CarouselCompo() {
 
 	return (
 
-		<div className=" h-80 md:h-[30rem]">
+		<div className=" h-80 md:h-[30rem] ">
 			{CarouselImages &&
 				<Carousel>
 					{CarouselImages.map((image, index) => (

@@ -1,19 +1,19 @@
 {
     "CarouselImages": [
         {
-            "ImageLink": "/collegepic(1).jpg"
+            "ImageLink": "/images/collegepic(1).jpg"
         },
         {
-            "ImageLink": "/collegepic(2).jpg"
+            "ImageLink": "/images/collegepic(2).jpg"
         },
         {
-            "ImageLink": "/collegepic(3).jpg"
+            "ImageLink": "/images/collegepic(3).jpg"
         },
         {
-            "ImageLink": "/collegepic(4).jpg"
+            "ImageLink": "/images/collegepic(4).jpg"
         },
         {
-            "ImageLink": "/collegepic(5).jpg"
+            "ImageLink": "/images/collegepic(5).jpg"
         }
     ],
     "NoticeLineData": [
@@ -51,7 +51,7 @@
             "Keyword": "cse",
             "Description": "4 yrs B.Tech programme in Computer Science & Engineering. HOD: Prof. Prosenjit Das",
             "PageLink": "/academics/departments/cse",
-            "BannerPic": "/collegepic(1).jpg",
+            "BannerPic": "/images/collegepic(1).jpg",
             "PageRouteData": {
                 "DepartmentName": "Department of Computer Science & Engineering",
                 "YearofEstablishment": "July 2003",
@@ -65,7 +65,7 @@
             "Keyword": "csbs",
             "Description": "4 yrs B.Tech programme in Computer Science & Business Systems. HOD: Prof. Suman Bhattacharyya",
             "PageLink": "/academics/departments/csbs",
-            "BannerPic": "/collegepic(2).jpg",
+            "BannerPic": "/images/collegepic(2).jpg",
             "PageRouteData": {
                 "DepartmentName": "Department of Computer Science & Business Systems",
                 "YearofEstablishment": "July 2020",
@@ -79,7 +79,7 @@
             "Keyword": "ee",
             "Description": "4 yrs. B. Tech. programme in Electrical Engineering. HOD: Prof. Sandip Saha Chowdhury",
             "PageLink": "/academics/departments/ee",
-            "BannerPic": "/collegepic(3).jpg",
+            "BannerPic": "/images/collegepic(3).jpg",
             "PageRouteData": {
                 "DepartmentName": "Department of Electrical Engineering",
                 "YearofEstablishment": "July 2003",
@@ -93,7 +93,7 @@
             "Keyword": "eee",
             "Description": "4 yrs B.Tech. programme in Electrical & Electronics Engineering. HOD : Prof. Hiranmoy Mondal",
             "PageLink": "/academics/departments/eee",
-            "BannerPic": "/collegepic(4).jpg",
+            "BannerPic": "/images/collegepic(4).jpg",
             "PageRouteData": {
                 "DepartmentName": "Department of Electrical & Electronics Engineering",
                 "YearofEstablishment": "July 2020",
@@ -122,25 +122,25 @@
             "Title": "asd",
             "Description": "This is Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "PageLink": "/academics/departments/asd",
-            "BannerPic": "/collegepic(1).jpg"
+            "BannerPic": "/images/collegepic(1).jpg"
         },
         {
             "Title": "ddd",
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "PageLink": "/academics/departments/ddd",
-            "BannerPic": "/collegepic(2).jpg"
+            "BannerPic": "/images/collegepic(2).jpg"
         },
         {
             "Title": "wee",
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "PageLink": "/academics/departments/wee",
-            "BannerPic": "/collegepic(3).jpg"
+            "BannerPic": "/images/collegepic(3).jpg"
         },
         {
             "Title": "xzc",
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "PageLink": "/academics/departments/xzc",
-            "BannerPic": "/collegepic(4).jpg"
+            "BannerPic": "/images/collegepic(4).jpg"
         }
     ],
     "CarrierAtAotData": [
