@@ -4,7 +4,7 @@ import 'flowbite';
 import React, { useEffect, useState } from 'react'
 import { Carousel } from "flowbite-react";
 import FetchCarouselImages from '@/Helper/FetchCarouselImages';
-
+import './Carousel.css'
 
 export function CarouselCompo() {
 	const [CarouselImages, setCarouselImages] = useState(null);
@@ -22,7 +22,7 @@ export function CarouselCompo() {
 
 	return (
 
-		<div className=" h-52 md:h-[32rem]">
+		<div className=" h-80 md:h-[30rem]">
 			{CarouselImages &&
 				<Carousel>
 					{CarouselImages.map((image, index) => (

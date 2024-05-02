@@ -58,7 +58,7 @@ function NavLinks() {
             <Dropdown data={el} />
             :
             <li className="m-1 transition duration-300 ease-in-out transform hover:scale-110">
-              <Link href={el.path} className="font-bold text-blue-900 hover:underline px-3 bg-transparent">{el.title}</Link>
+              <Link href={el.path} className="font-bold text-blue-900 hover:underline px-2 bg-transparent">{el.title}</Link>
             </li >
           }
         </React.Fragment>

@@ -17,7 +17,7 @@ export default function NoticeLine() {
     }, []);
 
     return (
-        <div className="w-full p-2  shadow shadow-gray-800 drop-shadow-3xl">
+        <div className="w-full p-2  shadow shadow-gray-600 drop-shadow-3xl  md:relative md:-top-28 md:bg-white backdrop-blur-2xl bg-opacity-50">
 
             {NoticeLineData &&
                 <div className="w-full py-1">
