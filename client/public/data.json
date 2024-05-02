@@ -117,6 +117,32 @@
             }
         }
     ],
+    "HighlightsData": [
+        {
+            "Title": "asdasdfghjk",
+            "Description": "This is Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/asd",
+            "BannerPic": "/images/collegepic(1).jpg"
+        },
+        {
+            "Title": "ddd",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/ddd",
+            "BannerPic": "/images/collegepic(2).jpg"
+        },
+        {
+            "Title": "wee",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/wee",
+            "BannerPic": "/images/collegepic(3).jpg"
+        },
+        {
+            "Title": "xzc",
+            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "PageLink": "/academics/departments/xzc",
+            "BannerPic": "/images/collegepic(4).jpg"
+        }
+    ],
     "EventsData": [
         {
             "Title": "asd",
