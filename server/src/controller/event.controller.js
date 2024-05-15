@@ -6,7 +6,7 @@ const createEvent = async (req, res) => {
         const { title, details } = req.body;
         const posterPath = req.files?.event[0].path
         if (
-            [title, details, posterURL].some(
+            [title, details].some(
                 (field) => typeof field !== "string" || field.trim() === ""
             )
         ) {
@@ -26,6 +26,18 @@ const createEvent = async (req, res) => {
             .json({ success: false, message: "something went wrong" });
     }
 };
+
+const getEvents = async (req,res) => {
+    try {
+        const events = Event.find({});
+
+        return res.status(200).json({success:true,message:'events fetched',events})
+    } catch (error) {
+        return res
+            .status(500)
+            .json({ success: false, message: "something went wrong" });
+    }
+}
 
 const editEvent = async (req, res) => {
     try {
@@ -86,4 +98,5 @@ module.exports = {
     createEvent,
     editEvent,
     deleteEvent,
+    getEvents
 };

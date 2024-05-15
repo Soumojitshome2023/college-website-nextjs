@@ -2,6 +2,7 @@
 import { AdminLogIn } from '@/Helper/AdminLogIn';
 import { AdminSignUp } from '@/Helper/AdminSignUp';
 import ColorRingLoader from '@/components/Common/Others/ColorRingLoader';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useState, useEffect } from "react";
 
@@ -21,6 +22,7 @@ const SignInForm = () => {
 	const [PassResetLoading, setPassResetLoading] = useState(false);
 	const [RingLoad, setRingLoad] = useState(false);
 
+	const nav = useRouter()
 
 	const InputFieldClass = "bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500";
 
@@ -43,6 +45,7 @@ const SignInForm = () => {
 			const res = await AdminLogIn(Email, Password);
 			// if (res.success) {
 			// }
+			nav.push("/admin/dashboard")
 			setShowMessage(res.message);
 		} catch (error) {
 			setShowMessage(error.message);

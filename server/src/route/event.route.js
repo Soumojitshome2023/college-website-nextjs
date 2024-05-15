@@ -4,6 +4,7 @@ const {
     createEvent,
     editEvent,
     deleteEvent,
+    getEvents,
 } = require("../controller/event.controller");
 const authenticateAdmin = require("../middleware/auth.middleware");
 
@@ -11,10 +12,11 @@ const eventRouter = express.Router();
 
 eventRouter.post(
     "/upload",
-    authenticateAdmin,
     upload.fields([{ name: "event", maxCount: 1 }]),
     createEvent
 );
+
+eventRouter.get("/all",getEvents);
 
 eventRouter.post("/edit", authenticateAdmin, editEvent);
 

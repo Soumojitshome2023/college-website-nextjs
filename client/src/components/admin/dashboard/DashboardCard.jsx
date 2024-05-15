@@ -4,8 +4,8 @@ import React from 'react'
 
 export const DashboardCard = ({itemName}) => {
   return (
-    <div>
-        <span>{itemName}</span>
+    <div className='bg-blue-700 w-5/6 h-[200px] flex justify-center items-center rounded-lg shadow-sm shadow-black'>
+        <span className='text-white uppercase text-xl font-bold'>{itemName}</span>
     </div>
   )
 }
