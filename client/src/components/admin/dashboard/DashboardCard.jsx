@@ -2,10 +2,10 @@ import React from 'react'
 
 //============ Dashboard Button Item =============
 
-export const DashboardCard = () => {
+export const DashboardCard = ({itemName}) => {
   return (
     <div>
-        Edit
+        <span>{itemName}</span>
     </div>
   )
 }
