@@ -30,8 +30,12 @@ function NavLinks() {
           path: "/academics/departments",
         },
         {
-          title: "Login",
-          path: "/login",
+          title: "Library",
+          path: "/academics/resources/library",
+        },
+        {
+          title: "moodle",
+          path: "/academics/resources/moodle",
         },
       ]
     },

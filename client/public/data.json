@@ -201,5 +201,42 @@
             "PostLocation": "Published in Anandabazar Patrika & Telegraph on 12.12.23",
             "Link": "https://aot.edu.in/wp-content/uploads/2023/12/Add_12_12_23.pdf"
         }
+    ],
+    "contact": [
+        {
+            "Title": "Admin Dept:",
+            "Tel": "+91-9830161441",
+            "Email": "admin@aot.edu.in"
+        },
+        {
+            "Title": "Director/ Principal Office:",
+            "Tel": "+91-9830196317",
+            "Email": " academy@aot.edu.in"
+        },
+        {
+            "Title": "Admin Dept:",
+            "Tel": "+91-9830161441",
+            "Email": "admin@aot.edu.in"
+        },
+        {
+            "Title": "Academic & Exam. Dept:",
+            "Tel": "+91-9073360791",
+            "Email": "oicexam@aot.edu.in"
+        },
+        {
+            "Title": "Admission Office: ",
+            "Tel": " +91-98310-21706",
+            "Email": " admission@aot.edu.in"
+        },
+        {
+            "Title": "Account Section: ",
+            "Tel": " +91-9073360790",
+            "Email": " accounts@aot.edu.in"
+        },
+        {
+            "Title": "Training Dept.: ",
+            "Tel": " +91-9073360792",
+            "Email": " training@aot.edu.in"
+        }
     ]
 }
