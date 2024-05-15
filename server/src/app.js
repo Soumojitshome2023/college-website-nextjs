@@ -4,6 +4,7 @@ const adminRouter = require("./route/admin.route.js");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const eventRouter = require("./route/event.route.js");
+const noticeRouter = require("./route/notice.route.js");
 
 dotenv.config(".env");
 
@@ -25,6 +26,8 @@ app.use(cookieParser());
 app.use("/api/v1", adminRouter);
 
 app.use("/api/v1/event", eventRouter);
+
+app.use("/api/v1/notice", noticeRouter);
 
 app.get("/", (req, res) => {
     res.send("Working");
