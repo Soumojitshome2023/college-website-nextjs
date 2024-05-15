@@ -21,6 +21,7 @@ const createEvent = async (req, res) => {
             posterURL
         });
     } catch (error) {
+        console.log(error)
         return res
             .status(500)
             .json({ success: false, message: "something went wrong" });
