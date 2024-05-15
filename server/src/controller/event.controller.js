@@ -3,10 +3,9 @@ const { uploadOnCloudinary } = require("../utils/cloudinary.js");
 
 const createEvent = async (req, res) => {
     try {
-        const { title, details } = req.body;
-        const posterPath = req.files?.event[0].path
+        const { title, details,posterURL } = req.body;
         if (
-            [title, details].some(
+            [title, details,posterURL].some(
                 (field) => typeof field !== "string" || field.trim() === ""
             )
         ) {
@@ -14,12 +13,14 @@ const createEvent = async (req, res) => {
                 .status(400)
                 .json({ success: false, message: "insufficient data" });
         }
-        const posterURL = await uploadOnCloudinary(posterPath)
         await Event.create({
             title,
             details,
             posterURL
         });
+        return res
+            .status(200)
+            .json({ success: true, message: "event uploaded" });
     } catch (error) {
         console.log(error)
         return res
@@ -30,7 +31,7 @@ const createEvent = async (req, res) => {
 
 const getEvents = async (req,res) => {
     try {
-        const events = Event.find({});
+        const events = await Event.find({});
 
         return res.status(200).json({success:true,message:'events fetched',events})
     } catch (error) {

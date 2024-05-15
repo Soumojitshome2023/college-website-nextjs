@@ -1,6 +1,7 @@
 "use client";
 import { CreateEvent } from "@/Helper/CreateEvent";
 import React, { useState } from "react";
+import axios from "axios";
 
 const Page = () => {
   const [title, setTitle] = useState("");
@@ -10,16 +11,23 @@ const Page = () => {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
-      const formData = new FormData();
-      formData.append("title", title);
-      formData.append("details", details);
-      formData.append("event", file);
-      const resp = await CreateEvent(formData);
-      setTitle();
-      setDetails();
+      const imageData = new FormData();
+      imageData.append("file",file);
+      imageData.append("cloud_name", process.env.NEXT_PUBLIC_CLOUDNAME);
+      imageData.append("upload_preset", process.env.NEXT_PUBLIC_UPLOAD_PRESET);
+
+      const { data } = await axios.post("https://api.cloudinary.com/v1_1/drctt42py/image/upload", imageData)
+
+      const resp = await CreateEvent(title,details,data?.url);
+      setTitle("");
+      setDetails("");
       setFile();
+      alert(resp?.message)
       console.log(resp);
-    } catch (error) {}
+    } catch (error) {
+      alert(error)
+      console.log(error)
+    }
   };
   return (
     <div className="pt-10">

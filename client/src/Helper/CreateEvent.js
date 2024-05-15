@@ -1,15 +1,14 @@
 import axios from "axios";
-export const CreateEvent = (formData) => {
+export const CreateEvent = (title,details,posterURL) => {
     return new Promise(async (resolve, reject) => {
         try {
             // Fetch API
             const fetchlink = process.env.NEXT_PUBLIC_SERVERURL;
             const { data } = await axios.post(fetchlink + "/api/v1/event/upload",
-                formData,
                 {
-                    headers : {
-                        "Content-Type" : 'multipart/form-data'
-                    }
+                    title,
+                    details,
+                    posterURL
                 },
                 {
                     withCredentials: true
