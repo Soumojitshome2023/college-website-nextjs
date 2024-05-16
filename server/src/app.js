@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const eventRouter = require("./route/event.route.js");
 const noticeRouter = require("./route/notice.route.js");
+const carouselRouter = require("./route/carousel.route.js");
 
 dotenv.config(".env");
 
@@ -28,6 +29,8 @@ app.use("/api/v1", adminRouter);
 app.use("/api/v1/event", eventRouter);
 
 app.use("/api/v1/notice", noticeRouter);
+
+app.use("/api/v1/carousel", carouselRouter);
 
 app.get("/", (req, res) => {
     res.send("Working");

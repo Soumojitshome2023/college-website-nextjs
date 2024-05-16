@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const carouselSchema = new mongoose.Schema(
     {
-        posterURL: {
+        imageURL: {
             type: String,
             required: true,
         },

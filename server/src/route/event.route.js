@@ -5,6 +5,7 @@ const {
     editEvent,
     deleteEvent,
     getEvents,
+    getEventById,
 } = require("../controller/event.controller");
 const authenticateAdmin = require("../middleware/auth.middleware");
 const isAdmin = require("../middleware/admin.middleware");
@@ -21,7 +22,7 @@ eventRouter.post(
 
 eventRouter.get("/all", getEvents);
 
-eventRouter.get("/:id", getEvents);
+eventRouter.get("/:id", getEventById);
 
 eventRouter.post("/edit", authenticateAdmin, isAdmin, editEvent);
 
