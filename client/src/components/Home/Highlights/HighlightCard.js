@@ -21,7 +21,7 @@ export default function HighlightCard({ data }) {
 								</>
 							}
 						</p>
-						{data.details?.length > 100 &&
+						{data.Description.length > 100 &&
 							<div className="flex items-center flex-wrap ">
 								<button onClick={() => setReadMore(prev => !prev)} className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">{ReadMore ? "Read Less" : "Read More..."}
 								</button>
