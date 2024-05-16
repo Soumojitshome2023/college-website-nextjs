@@ -18,17 +18,20 @@
     ],
     "NoticeLineData": [
         {
-            "Title": "Notice 1"
+            "Title": "Pre-Conference scheduled on 27 September, 2024",
+            "Link": "/"
         },
         {
-            "Title": "Notice 2"
+            "Title": "AOT (Team: Buzz 6) bagged the first rank in the AICTE SIH 2023",
+            "Link": "/"
         },
         {
-            "Title": "Notice 3",
-            "Link": "demo"
+            "Title": "WE ARE HIRING!",
+            "Link": "/"
         },
         {
-            "Title": "Notice 4"
+            "Title": "Refund of Caution Deposit for 2022 passout students(Last date: 22/12/2023)",
+            "Link": "/"
         }
     ],
     "DepartmentsData": [
@@ -119,27 +122,27 @@
     ],
     "HighlightsData": [
         {
-            "Title": "asdasdfghjk",
-            "Description": "This is Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/asd",
+            "Title": "The Techfest at the Academy of Technology",
+            "Description": "The Techfest at the Academy of Technology is an annual event that showcases innovation and creativity in various fields of technology. It features a range of activities including workshops, competitions, exhibitions, and lectures from industry experts. Students have the opportunity to display their projects, engage in hands-on learning, and network with professionals. This event aims to inspire and cultivate a passion for technology among attendees, fostering an environment of learning and collaboration.",
+            "PageLink": "/",
             "BannerPic": "/images/collegepic(1).jpg"
         },
         {
-            "Title": "ddd",
-            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/ddd",
+            "Title": "Gamesmeet at the Academy of Technology",
+            "Description": "Gamesmeet at the Academy of Technology is an annual gathering focused on gaming and e-sports. It features competitive gaming tournaments, casual gaming sessions, and interactive workshops. Participants can compete in popular games, learn about game development, and connect with fellow gaming enthusiasts. The event aims to promote the gaming culture within the academy, encouraging both fun and educational experiences in the world of video games.",
+            "PageLink": "/",
             "BannerPic": "/images/collegepic(2).jpg"
         },
         {
-            "Title": "wee",
-            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/wee",
+            "Title": "The 'Women in Space Engineering' event at the Academy of Technology",
+            "Description": "The 'Women in Space Engineering' event at the Academy of Technology is a prestigious gathering that highlights the contributions of women in the field of space engineering. Esteemed IIT professors and renowned female scientists from ISRO come together to share their experiences, insights, and advancements in space technology. The event includes inspiring talks, panel discussions, and networking opportunities, aiming to encourage and empower female students to pursue careers in space engineering and related fields.",
+            "PageLink": "/",
             "BannerPic": "/images/collegepic(3).jpg"
         },
         {
-            "Title": "xzc",
-            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/xzc",
+            "Title": "The GDG September Meet at the Academy of Technology",
+            "Description": "The GDG September Meet at the Academy of Technology is a monthly gathering hosted by the Google Developer Group. It features tech talks, coding sessions, and networking opportunities for developers to share knowledge and collaborate on projects.",
+            "PageLink": "/",
             "BannerPic": "/images/collegepic(4).jpg"
         }
     ],
@@ -147,25 +150,25 @@
         {
             "Title": "asd",
             "Description": "This is Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/asd",
+            "PageLink": "/",
             "BannerPic": "/images/collegepic(1).jpg"
         },
         {
             "Title": "ddd",
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/ddd",
+            "PageLink": "/",
             "BannerPic": "/images/collegepic(2).jpg"
         },
         {
             "Title": "wee",
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/wee",
+            "PageLink": "/",
             "BannerPic": "/images/collegepic(3).jpg"
         },
         {
             "Title": "xzc",
             "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "PageLink": "/academics/departments/xzc",
+            "PageLink": "/",
             "BannerPic": "/images/collegepic(4).jpg"
         }
     ],
