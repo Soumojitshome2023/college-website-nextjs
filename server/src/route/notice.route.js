@@ -5,6 +5,7 @@ const {
     getNotices,
     editNotice,
     deleteNotice,
+    getNoticeById,
 } = require("../controller/notice.controller");
 const isAdmin = require("../middleware/admin.middleware");
 
@@ -20,8 +21,10 @@ noticeRouter.post(
 
 noticeRouter.get("/all", getNotices);
 
-noticeRouter.post("/edit", authenticateAdmin, isAdmin, editNotice);
+noticeRouter.get("/:id", getNoticeById);
 
-noticeRouter.post("/delete", authenticateAdmin, isAdmin, deleteNotice);
+noticeRouter.post("/edit/:id", authenticateAdmin, isAdmin, editNotice);
+
+noticeRouter.post("/delete/:id", authenticateAdmin, isAdmin, deleteNotice);
 
 module.exports = noticeRouter;

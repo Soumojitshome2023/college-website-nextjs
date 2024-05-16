@@ -17,6 +17,6 @@ carouselRouter.get("/all", getCarousels);
 
 carouselRouter.get("/:id", getCarouselsById);
 
-carouselRouter.post("/delete", authenticateAdmin, isAdmin, deleteCarousel);
+carouselRouter.post("/delete/:id", authenticateAdmin, isAdmin, deleteCarousel);
 
 module.exports = carouselRouter;
