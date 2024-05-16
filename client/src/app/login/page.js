@@ -1,13 +1,15 @@
 "use client"
+import React from 'react';
+import { useState, useEffect } from "react";
 import { AdminLogIn } from '@/Helper/AdminLogIn';
 import { AdminSignUp } from '@/Helper/AdminSignUp';
 import ColorRingLoader from '@/components/Common/Others/ColorRingLoader';
 import { useRouter } from 'next/navigation';
-import React from 'react';
-import { useState, useEffect } from "react";
+import { useAuth } from '@/context/auth';
 
 
 const SignInForm = () => {
+	const { authUser, IsLoading, setAuthUser } = useAuth();
 	const [Name, setName] = useState('');
 	const [UserName, setUserName] = useState('');
 	const [Email, setEmail] = useState('@gmail.com');
@@ -30,11 +32,12 @@ const SignInForm = () => {
 		setRingLoad(true);
 		try {
 			const res = await AdminSignUp(Name, UserName, Email, Contact, Password, ProfilePicURL);
-			// if (res.success) {
-			// }
-			setShowMessage(res.message);
+			if (res.success) {
+				setAuthUser(res.admin);
+				setShowMessage(res?.message);
+			}
 		} catch (error) {
-			setShowMessage(error.message);
+			setShowMessage(error?.message);
 		}
 		setRingLoad(false);
 	}
@@ -43,12 +46,16 @@ const SignInForm = () => {
 		setRingLoad(true);
 		try {
 			const res = await AdminLogIn(Email, Password);
-			// if (res.success) {
-			// }
-			nav.push("/admin/dashboard")
-			setShowMessage(res.message);
+			if (res.success) {
+				setAuthUser(res.admin);
+				nav.push("/admin/dashboard");
+				setShowMessage(res?.message);
+				if (typeof window !== "undefined") {
+					sessionStorage.setItem("AdminId", res._id);
+				}
+			}
 		} catch (error) {
-			setShowMessage(error.message);
+			setShowMessage(error?.message);
 		}
 		setRingLoad(false);
 	}
@@ -60,6 +67,12 @@ const SignInForm = () => {
 		}
 		setPassRememberMe(event.target.checked);
 	};
+
+	useEffect(() => {
+		if (authUser) {
+			nav.push("/admin/dashboard");
+		}
+	}, [authUser, IsLoading])
 
 	return (
 		<div className="flex flex-col items-center justify-center mx-auto">

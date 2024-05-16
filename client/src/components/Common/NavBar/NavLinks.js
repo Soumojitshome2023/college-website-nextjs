@@ -1,9 +1,12 @@
+"use client"
 import React from "react";
 import Link from "next/link";
 import Dropdown from "./Dropdown";
+import { useAuth } from "@/context/auth";
 
 
 function NavLinks() {
+  const { authUser, IsLoading, setAuthUser } = useAuth();
   const links = [
     {
       title: "Home",
@@ -48,10 +51,12 @@ function NavLinks() {
       path: "/administration",
     },
     {
-      title: "Login",
+      authDependent: true,
+      title: "LogIn",
       path: "/login",
+      Alttitle: "Dashboard",
+      Altpath: "/admin/dashboard",
     },
-
   ];
 
   return (
@@ -62,7 +67,10 @@ function NavLinks() {
             <Dropdown data={el} />
             :
             <li className="m-1 transition duration-300 ease-in-out transform hover:scale-110">
-              <Link href={el.path} className="font-bold text-white hover:underline px-2 bg-transparent">{el.title}</Link>
+              {el.authDependent && authUser ?
+                <Link href={el.Altpath} className="font-bold text-white hover:underline px-2 bg-transparent">{el.Alttitle}</Link> :
+                <Link href={el.path} className="font-bold text-white hover:underline px-2 bg-transparent">{el.title}</Link>
+              }
             </li >
           }
         </React.Fragment>

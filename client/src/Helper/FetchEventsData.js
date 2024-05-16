@@ -1,13 +1,11 @@
 const FetchEventsData = () => {
     return new Promise(async (resolve, reject) => {
         try {
-            const response = await fetch('/data.json');
-            if (!response.ok) {
-                throw new Error('Failed to fetch data');
-            }
+            const response = await fetch(process.env.NEXT_PUBLIC_SERVERURL + '/api/v1/event/all');
+           
             const data = await response.json();
             resolve({
-                data: data.EventsData,
+                data: data.events,
                 success: true
             });
         } catch (error) {

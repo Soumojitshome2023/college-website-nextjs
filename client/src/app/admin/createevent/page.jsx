@@ -1,36 +1,56 @@
 "use client";
-import { CreateEvent } from "@/Helper/CreateEvent";
-import React, { useState } from "react";
 import axios from "axios";
+import { CreateEvent } from "@/Helper/CreateEvent";
+import React, { useEffect, useState } from "react";
+import { useAuth } from "@/context/auth";
+import { useRouter } from 'next/navigation';
 
 const Page = () => {
   const [title, setTitle] = useState("");
   const [details, setDetails] = useState("");
   const [file, setFile] = useState();
 
+  const nav = useRouter();
+  const { authUser, IsLoading, setAuthUser } = useAuth();
+
+  useEffect(() => {
+    if (!authUser && !IsLoading) {
+      nav.push("/login");
+    }
+  }, [authUser, IsLoading])
+
+
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
       const imageData = new FormData();
-      imageData.append("file",file);
-      imageData.append("cloud_name", process.env.NEXT_PUBLIC_CLOUDNAME);
-      imageData.append("upload_preset", process.env.NEXT_PUBLIC_UPLOAD_PRESET);
 
-      const { data } = await axios.post("https://api.cloudinary.com/v1_1/drctt42py/image/upload", imageData)
+      const folder = process.env.NEXT_PUBLIC_CLOUD_FOLDER;
+      const cloud_name = process.env.NEXT_PUBLIC_CLOUDNAME;
+      const upload_preset = process.env.NEXT_PUBLIC_UPLOAD_PRESET;
 
-      const resp = await CreateEvent(title,details,data?.url);
+      imageData.append("file", file);
+      imageData.append('folder', folder);
+      imageData.append("cloud_name", cloud_name);
+      imageData.append("upload_preset", upload_preset);
+
+      const { data } = await axios.post(`https://api.cloudinary.com/v1_1/${cloud_name}/image/upload`, imageData)
+
+      const resp = await CreateEvent(title, details, data?.url);
       setTitle("");
       setDetails("");
       setFile();
-      alert(resp?.message)
+      alert(resp?.message);
       console.log(resp);
     } catch (error) {
-      alert(error)
-      console.log(error)
+      alert(error);
+      console.log(error);
     }
   };
+
+
   return (
-    <div className="pt-10">
+    <div className="my-10 m-2">
       <h2 className="text-center text-4xl font-bold pb-10">Create Event</h2>
       <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
         <div className="mb-5">

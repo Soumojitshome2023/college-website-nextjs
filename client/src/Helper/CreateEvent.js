@@ -1,5 +1,5 @@
 import axios from "axios";
-export const CreateEvent = (title,details,posterURL) => {
+export const CreateEvent = (title, details, posterURL) => {
     return new Promise(async (resolve, reject) => {
         try {
             // Fetch API
