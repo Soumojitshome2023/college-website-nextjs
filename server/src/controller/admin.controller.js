@@ -141,8 +141,8 @@ const adminLogout = async (req,res) => {
     req.admin = null;
     return res
     .status(201)
-    .clearCookie("accessToken")
-    .clearCookie("refreshToken")
+    .clearCookie("accessToken",{sameSite : "none"})
+    .clearCookie("refreshToken",{sameSite : "none"})
     .json({success:true,message:'admin logged out successfully'})
 }
 
