@@ -16,7 +16,8 @@ const createEvent = async (req, res) => {
         await Event.create({
             title,
             details,
-            posterURL
+            posterURL,
+            author : req.admin
         });
         return res
             .status(200)

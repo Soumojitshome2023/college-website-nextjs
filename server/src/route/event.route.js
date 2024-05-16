@@ -13,6 +13,7 @@ const eventRouter = express.Router();
 eventRouter.post(
     "/upload",
     // upload.fields([{ name: "event", maxCount: 1 }]),
+    authenticateAdmin,
     createEvent
 );
 

@@ -15,7 +15,8 @@ const createNotice = async (req, res) => {
         }
         await Notice.create({
             title,
-            details
+            details,
+            author : req.admin
         });
         return res
             .status(200)

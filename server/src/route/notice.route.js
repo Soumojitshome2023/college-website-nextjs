@@ -7,6 +7,7 @@ const noticeRouter = express.Router();
 noticeRouter.post(
     "/upload",
     // upload.fields([{ name: "event", maxCount: 1 }]),
+    authenticateAdmin,
     createNotice
 );
 
