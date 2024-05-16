@@ -24,6 +24,10 @@ const adminSchema = new mongoose.Schema({
         required : true,
         unique : true
     },
+    isAdmin : {
+        type : Boolean,
+        default : false
+    },
     refreshToken : String
 },{timestamps : true})
 

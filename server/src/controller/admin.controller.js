@@ -189,6 +189,7 @@ const getAccessToken = async (req, res) => {
             admin.username,
             admin.contact,
             admin.email,
+            admin.isAdmin,
             admin.profileURL
         );
 

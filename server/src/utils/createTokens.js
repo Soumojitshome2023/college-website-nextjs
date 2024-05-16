@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const createAccessToken = (id, name, username, contact, email, profileURL) => {
+const createAccessToken = (id, name, username, contact, email, profileURL, isAdmin) => {
     const accessToken = jwt.sign(
         {
             id,
@@ -8,6 +8,7 @@ const createAccessToken = (id, name, username, contact, email, profileURL) => {
             username,
             contact,
             email,
+            isAdmin,
             profileURL,
         },
         process.env.ACCESS_TOKEN_KEY
