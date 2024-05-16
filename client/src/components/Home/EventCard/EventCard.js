@@ -1,14 +1,19 @@
-import AnimatedElement from '@/components/Common/Animation/AnimatedElement'
-import React, { useState } from "react";
+"use client"
 import Link from "next/link";
+import React, { useState } from "react";
+import AnimatedElement from '@/components/Common/Animation/AnimatedElement'
+import { useAuth } from "@/context/auth";
+import ThreeDot from "./ThreeDot";
 
 export default function EventCard({ data }) {
 	const [ReadMore, setReadMore] = useState(false);
+	const { authUser, IsLoading, setAuthUser } = useAuth();
+
 	return (
 		<>
 			{/* Card  */}
 			<AnimatedElement className="p-2 my-4 mx-2 md:w-96 w-full">
-				<div className="rounded-lg overflow-hidden border-b-2 border-gray-700">
+				<div className="rounded-lg min-h-96">
 					<img className="md:h-48 h-40 w-full rounded-lg object-cover object-center" src={data.posterURL} alt="img" />
 					<div className="p-2">
 						{/* <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2> */}
@@ -20,12 +25,15 @@ export default function EventCard({ data }) {
 								</>
 							}
 						</p>
-						{data.details.length > 100 &&
-							<div className="flex items-center flex-wrap ">
-								<button onClick={() => setReadMore(prev => !prev)} className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">{ReadMore ? "Read Less" : "Read More..."}
-								</button>
-							</div>
-						}
+						<div className="flex justify-between">
+							{data.details.length > 100 &&
+								<div className="flex items-center flex-wrap ">
+									<button onClick={() => setReadMore(prev => !prev)} className="text-indigo-800 font-bold inline-flex items-center md:mb-2 lg:mb-0">{ReadMore ? "Read Less" : "Read More..."}
+									</button>
+								</div>
+							}
+							<ThreeDot id={data._id} />
+						</div>
 					</div>
 				</div>
 			</AnimatedElement>

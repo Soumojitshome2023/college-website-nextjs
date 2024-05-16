@@ -13,7 +13,8 @@ export default function EventCardSection() {
 			const res = await FetchEventsData();
 			// console.warn(res)
 			if (res.success) {
-				setEventsData(res.data);
+				const data = res.data.reverse();
+				setEventsData(data);
 			}
 		};
 		fetchData();

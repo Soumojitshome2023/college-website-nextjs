@@ -67,7 +67,7 @@ function NavLinks() {
             <Dropdown data={el} />
             :
             <li className="m-1 transition duration-300 ease-in-out transform hover:scale-110">
-              {el.authDependent && authUser ?
+              {el.authDependent && authUser && authUser?.isAdmin ?
                 <Link href={el.Altpath} className="font-bold text-white hover:underline px-2 bg-transparent">{el.Alttitle}</Link> :
                 <Link href={el.path} className="font-bold text-white hover:underline px-2 bg-transparent">{el.title}</Link>
               }

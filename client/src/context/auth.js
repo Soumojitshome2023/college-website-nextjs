@@ -14,7 +14,7 @@ export default function AdminAuth() {
     const GetAdmin = async () => {
         try {
             const res = await GetAdminFunc();
-            if (res.success) {
+            if (res.success && res?.admin?.isAdmin) {
                 setAuthUser(res.admin);
             }
         } catch (error) {

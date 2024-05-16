@@ -48,11 +48,8 @@ const SignInForm = () => {
 			const res = await AdminLogIn(Email, Password);
 			if (res.success) {
 				setAuthUser(res.admin);
-				nav.push("/admin/dashboard");
+				// nav.push("/admin/dashboard");
 				setShowMessage(res?.message);
-				if (typeof window !== "undefined") {
-					sessionStorage.setItem("AdminId", res._id);
-				}
 			}
 		} catch (error) {
 			setShowMessage(error?.message);
@@ -69,10 +66,10 @@ const SignInForm = () => {
 	};
 
 	useEffect(() => {
-		if (authUser) {
+		if (authUser && authUser?.isAdmin) {
 			nav.push("/admin/dashboard");
 		}
-	}, [authUser, IsLoading])
+	}, [authUser, IsLoading]);
 
 	return (
 		<div className="flex flex-col items-center justify-center mx-auto">
