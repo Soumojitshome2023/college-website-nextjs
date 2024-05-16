@@ -21,6 +21,8 @@ eventRouter.post(
 
 eventRouter.get("/all", getEvents);
 
+eventRouter.get("/:id", getEvents);
+
 eventRouter.post("/edit", authenticateAdmin, isAdmin, editEvent);
 
 eventRouter.post("/delete", authenticateAdmin, isAdmin, deleteEvent);

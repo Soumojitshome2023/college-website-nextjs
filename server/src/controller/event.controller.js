@@ -42,6 +42,19 @@ const getEvents = async (req,res) => {
     }
 }
 
+const getEventById = async (req,res) => {
+    try {
+        const { id } = req.params;
+        const event = await Event.findById(id);
+
+        return res.status(200).json({success:true,message:'event fetched',event})
+    } catch (error) {
+        return res
+            .status(500)
+            .json({ success: false, message: "something went wrong" });
+    }
+}
+
 const editEvent = async (req, res) => {
     try {
         const { title, details } = req.body;
@@ -101,5 +114,6 @@ module.exports = {
     createEvent,
     editEvent,
     deleteEvent,
-    getEvents
+    getEvents,
+    getEventById
 };
