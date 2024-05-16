@@ -41,6 +41,19 @@ const getNotices = async (req,res) => {
     }
 }
 
+const getNoticeById = async (req,res) => {
+    try {
+        const { id } = req.params;
+        const notice = await Notice.findById(id);
+
+        return res.status(200).json({success:true,message:'notice fetched',notice})
+    } catch (error) {
+        return res
+            .status(500)
+            .json({ success: false, message: "something went wrong" });
+    }
+}
+
 const editNotice = async (req, res) => {
     try {
         const { title, details } = req.body;
@@ -100,5 +113,6 @@ module.exports = {
     createNotice,
     editNotice,
     deleteNotice,
-    getNotices
+    getNotices,
+    getNoticeById
 };
