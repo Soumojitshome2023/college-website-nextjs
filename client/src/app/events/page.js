@@ -1,9 +1,19 @@
 "use client"
 import EventCardSection from '@/components/EventCard/EventCardSection'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // ==================== Events Page ====================
 export default function Page() {
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [])
 
   // ==================== Return ====================
   return (

@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
           {/* <div>
             <img src="/background.png" className=" h-screen w-full fixed top-0 left-0 -z-50" />
           </div> */}
-          {/* <div className=" h-screen w-full fixed top-0 left-0 -z-50 bg-gradient-to-b from-slate-100 to-blue-200" ></div> */}
+          <div className=" h-screen w-full fixed top-0 left-0 -z-50 bg-gradient-to-b from-white to-blue-100" ></div>
           <NextTopLoader color="#FF0000"
             initialPosition={0.08}
             height={4}

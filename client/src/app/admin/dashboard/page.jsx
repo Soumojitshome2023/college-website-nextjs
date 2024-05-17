@@ -12,6 +12,16 @@ const Page = () => {
   const { authUser, IsLoading, setAuthUser } = useAuth();
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [])
+
+  useEffect(() => {
     if (!IsLoading && !(authUser && authUser?.isAdmin)) {
       nav.push("/login");
     }

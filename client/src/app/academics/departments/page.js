@@ -1,8 +1,18 @@
 "use client"
 import DepartmentsSection from '@/components/Departments/DepartmentsSection'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function Page() {
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [])
 
   // ==================== Return ====================
   return (

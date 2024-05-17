@@ -1,9 +1,19 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import AboutCard from '@/components/About/AboutCard'
 
 // ==================== About Page ====================
 export default function Page() {
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [])
 
   // ==================== Return ====================
   return (

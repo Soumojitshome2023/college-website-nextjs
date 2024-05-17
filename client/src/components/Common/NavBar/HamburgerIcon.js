@@ -5,7 +5,7 @@ export default function HamburgerIcon({ NavOpen }) {
 
     return (
         <>
-            <div id={styles.navicon} className={NavOpen && styles.open} >
+            <div id={styles.navicon} className={`${NavOpen && styles.open}`} >
                 <span></span>
                 <span></span>
                 <span></span>

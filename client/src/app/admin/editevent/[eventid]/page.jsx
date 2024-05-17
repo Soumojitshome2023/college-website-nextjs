@@ -1,10 +1,7 @@
 "use client";
-import axios from "axios";
-import { CreateEvent } from "@/Helper/CreateEvent";
 import React, { useEffect, useState } from "react";
 import { useAuth } from "@/context/auth";
 import { useRouter } from 'next/navigation';
-import EventCardSection from "@/components/EventCard/EventCardSection";
 import FetchEventDataByIdFunc from "@/Helper/FetchEventDataByIdFunc";
 import ParagraphSkeletonLoader from "@/components/Common/SkeletonLoader/ParagraphSkeletonLoader";
 import { UpdateEvent } from "@/Helper/UpdateEvent";
@@ -22,6 +19,16 @@ export default function page({ params }) {
   const [details, setDetails] = useState("");
 
   const nav = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [])
 
   const GetQueryEventData = async () => {
     setPageLoader(true);

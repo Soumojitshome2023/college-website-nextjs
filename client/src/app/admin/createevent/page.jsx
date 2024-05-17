@@ -23,6 +23,16 @@ const Page = () => {
   }, [authUser, IsLoading])
 
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [])
+
   const handleSubmit = async (e) => {
     setRingLoader(true);
     try {

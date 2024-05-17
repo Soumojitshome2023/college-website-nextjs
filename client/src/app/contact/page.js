@@ -1,7 +1,19 @@
+"use client"
+import React, { useEffect } from 'react'
 import HTMLRender from '@/Helper/HTMLRender'
-import React from 'react'
 
 export default function page() {
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [])
+
   return (
 
     <div className='p-2 pb-20 bg-white'>
