@@ -12,7 +12,7 @@
     Welcome to the official repository for the Academy of Technology's college website. This project is developed as part of a college-level website design challenge. The website provides comprehensive information about the college, including events, notices, departments, and more.
     <br />
     <br />
-    <a target="_blank" href="https://aotedu.vercel.app/">View Demo</a>
+    <a target="_blank" href="https://aotedu.vercel.app/">Live Link</a>
     ·
     <a target="_blank" href="https://github.com/Soumojitshome2023/college-website-nextjs">Repo Link</a>
     ·
@@ -20,6 +20,8 @@
   </p>
 </div>
 
+## 💻 Demo
+<video src="https://res.cloudinary.com/drctt42py/video/upload/v1715963237/college_website/Untitled_Video_-_Made_With_Clipchamp_5_k3a2re.mp4" controls></video>
 
 <!-- TABLE OF CONTENTS -->
 <details>
