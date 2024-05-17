@@ -6,15 +6,15 @@ export default function DepartmentCard({ data }) {
 	return (
 		<>
 			{/* Card  */}
-			<AnimatedElement className="p-4 md:w-1/3 ">
+			<AnimatedElement className="p-2 my-4 mx-2 md:w-96 w-full">
 				<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
 					<img className="lg:h-48 md:h-36 w-full object-cover object-center" src={data.BannerPic} alt="img" />
 					<div className="p-6">
 						{/* <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2> */}
-						<h1 className="title-font text-lg font-medium text-gray-900 mb-3">{data.Title}</h1>
-						<p className="leading-relaxed mb-3">{data.Description}</p>
+						<h1 className="title-font text-lg font-bold text-gray-900 mb-3">{data.Title}</h1>
+						<p className="leading-relaxed mb-3 text-gray-700">{data.Description}</p>
 						<div className="flex items-center flex-wrap ">
-							<Link href={data.PageLink} className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Viev More
+							<Link href={data.PageLink} className="text-indigo-700 inline-flex items-center md:mb-2 lg:mb-0 font-bold">Viev More
 								<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
 									<path d="M5 12h14"></path>
 									<path d="M12 5l7 7-7 7"></path>

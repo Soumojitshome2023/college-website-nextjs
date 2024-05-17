@@ -1,5 +1,6 @@
 import React from 'react'
 import AnimatedElement from '../Animation/AnimatedElement'
+import Link from "next/link";
 
 export default function Footer() {
 
@@ -15,84 +16,102 @@ export default function Footer() {
 
 
           {/* Footer Links  */}
+          {/* Departments */}
           <AnimatedElement className=" flex-grow flex flex-wrap mb-10 md:text-left text-center order-first">
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <div className="lg:w-2/5 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-bold text-white tracking-widest text-lg mb-3">Departments</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">First Link</a>
+                  <Link href="/academics/departments/ece" className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Electronics & Communication</Link>
                 </li>
                 <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Second Link</a>
+                  <Link href="/academics/departments/cse" className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Computer Science</Link>
                 </li>
                 <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Third Link</a>
+                  <Link href="/academics/departments/csbs" className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Computer Science & Business Systems</Link>
                 </li>
                 <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">First Link</a>
+                  <Link href="/academics/departments/ee" className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Electrical Engineering</Link>
                 </li>
                 <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Second Link</a>
+                  <Link href="/academics/departments/eee" className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Electrical & Electronics</Link>
                 </li>
                 <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Third Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">First Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Second Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Third Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">First Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Second Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Third Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-300 cursor-pointer">Fourth Link</a>
+                  <Link href="/academics/departments/me" className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Mechanical Engineering</Link>
                 </li>
               </nav>
             </div>
 
-            <div className="flex-col  flex-grow flex flex-wrap mb-10 md:text-left text-balance">
-              <h3 className=' font-bold text-xl'>Address</h3>
-              <p>Grand Tank Road,</p>
-              <p>Adisaptagram,</p>
-              <p>Adecconagar , Bandel</p>
-              <p>Hoogly , 721212</p>
-              <p className="email">academy.of.technology@aot.edu.in</p>
-              <h4>+91 9883464589</h4>
+            {/* Downloads */}
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-bold text-white tracking-widest text-lg mb-3">B. Tech Syllabus</h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a target='_blank' href='https://makautexam.net/aicte_details/CourseStructure/CSBS20.pdf' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; CSBS</a>
+                </li>
+                <li>
+                  <a target='_blank' href='https://makautexam.net/aicte_details/CourseStructure/CSE.pdf' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; CSE</a>
+                </li>
+                <li>
+                  <a target='_blank' href='https://makautexam.net/aicte_details/CourseStructure/ECE.pdf' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; ECE</a>
+                </li>
+                <li>
+                  <a target='_blank' href='https://makautexam.net/aicte_details/CourseStructure/EE.pdf' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; EE</a>
+                </li>
+                <li>
+                  <a target='_blank' href='https://makautexam.net/aicte_details/CourseStructure/EEE.pdf' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; EEE</a>
+                </li>
+                <li>
+                  <a target='_blank' href='https://makautexam.net/aicte_details/CourseStructure/ME.pdf' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; ME</a>
+                </li>
+              </nav>
+            </div>
+            {/* Admission Enquiry */}
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-bold text-white tracking-widest text-lg mb-3">Admission Enquiry</h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a target='_blank' href='/DocFiles/Documents for Admission AOT.pdf' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Documents for Admission</a>
+                </li>
+                <li>
+                  <Link href='/contact' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Contact Us</Link>
+                </li>
+
+              </nav>
+            </div>
+
+            {/* AOT Online */}
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-bold text-white tracking-widest text-lg mb-3">AOT Online</h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a target='_blank' href='https://www.linkedin.com/school/academy-of-technology/' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; LinkedIn</a>
+                </li>
+                <li>
+                  <a target='_blank' href='https://www.instagram.com/aotconnect/' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Instagram</a>
+                </li>
+                <li>
+                  <a target='_blank' href='https://www.youtube.com/channel/UC1lroAhlIz6Reni_I2dpaHA' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; YouTube</a>
+                </li>
+                <li>
+                  <a target='_blank' href='http://182.74.215.198/moodle/' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Moodle Portal Login</a>
+                </li>
+                <li>
+                  <a target='_blank' href='https://gic.aot.edu.in/index.html' className="text-white hover:text-gray-300 cursor-pointer"> &#8658; Google Innovation Centre</a>
+                </li>
+
+              </nav>
+            </div>
+
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-bold text-white tracking-widest text-lg mb-3">Address</h2>
+
+              <p className="text-white hover:text-gray-300 cursor-pointer">Grand Tank Road,</p>
+              <p className="text-white hover:text-gray-300 cursor-pointer">Adisaptagram,</p>
+              <p className="text-white hover:text-gray-300 cursor-pointer">Adecconagar , Bandel</p>
+              <p className="text-white hover:text-gray-300 cursor-pointer">Hoogly , 721212</p>
+              <p className="text-white hover:text-gray-300 cursor-pointer">academy.of.technology@aot.edu.in</p>
+              <h4 className="text-white hover:text-gray-300 cursor-pointer">+91 9883464589</h4>
             </div>
 
           </AnimatedElement>

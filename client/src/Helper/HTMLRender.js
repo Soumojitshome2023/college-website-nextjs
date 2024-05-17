@@ -1,8 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import Markdown from 'markdown-to-jsx';
 
-const MarkdownParser = ({ FilePath }) => {
+const HTMLRender = ({ FilePath }) => {
 
     const [demoContent, setDemoContent] = useState(null);
 
@@ -25,10 +24,10 @@ const MarkdownParser = ({ FilePath }) => {
     return (
         <div>
             {demoContent &&
-                <Markdown>{demoContent}</Markdown>
+                <div dangerouslySetInnerHTML={{ __html: demoContent }} />
             }
         </div>
     );
 };
 
-export default MarkdownParser;
+export default HTMLRender;

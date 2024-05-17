@@ -7,10 +7,10 @@ export default function AccordionCard({ title, description }) {
     const [Open, setOpen] = useState(false);
 
     return (
-        <div className='container mx-auto my-2'>
-            <div data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+        <div className='container mx-auto my-2 rounded-lg'>
+            <div className="text-blue-600 dark:text-white">
                 <h2 >
-                    <button type="button" className="text-left flex items-center justify-between w-full p-5 font-medium  text-gray-500 border border-b-0 border-gray-200 rounded-t-xl  dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                    <button className="text-left bg-gray-300 flex items-center justify-between w-full p-5  text-black font-bold rounded-t-xl hover:bg-gray-400 "
                         onClick={() => setOpen(prev => !prev)}>
                         <span>{title}</span>
                         <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -19,8 +19,8 @@ export default function AccordionCard({ title, description }) {
                     </button>
                 </h2>
                 <div className={!Open && 'hidden'} >
-                    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                        <p className="mb-2 text-gray-500 dark:text-gray-400"> {description} </p>
+                    <div className="p-5 border border-b-0 border-gray-200 ">
+                        <p className="mb-2 text-gray-700 font-medium"> {description} </p>
                     </div>
                 </div>
             </div>

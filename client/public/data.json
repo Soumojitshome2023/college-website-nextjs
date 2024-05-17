@@ -46,7 +46,7 @@
                 "YearofEstablishment": "July 2003",
                 "HODname": "Dr. Abhijit Banerjee.",
                 "HODContactMailId": "hod_ece@aot.edu.in",
-                "DepartmentStaticData": "/DepartmentMD/ECE.md"
+                "DepartmentStaticData": "/RichText/ECE.html"
             }
         },
         {
@@ -54,13 +54,13 @@
             "Keyword": "cse",
             "Description": "4 yrs B.Tech programme in Computer Science & Engineering. HOD: Prof. Prosenjit Das",
             "PageLink": "/academics/departments/cse",
-            "BannerPic": "/images/collegepic(1).jpg",
+            "BannerPic": "/images/collegepic(6).jpg",
             "PageRouteData": {
                 "DepartmentName": "Department of Computer Science & Engineering",
                 "YearofEstablishment": "July 2003",
                 "HODname": "Prof. Prosenjit Das",
                 "HODContactMailId": "hod_cse@aot.edu.in",
-                "DepartmentStaticData": "/DepartmentMD/CSE.md"
+                "DepartmentStaticData": "/RichText/CSE.html"
             }
         },
         {
@@ -74,7 +74,7 @@
                 "YearofEstablishment": "July 2020",
                 "HODname": "Prof. Suman Bhattacharyya.",
                 "HODContactMailId": "hod_csbs@aot.edu.in",
-                "DepartmentStaticData": "/DepartmentMD/CSBS.md"
+                "DepartmentStaticData": "/RichText/CSBS.html"
             }
         },
         {
@@ -88,7 +88,7 @@
                 "YearofEstablishment": "July 2003",
                 "HODname": "Prof. Sandip Saha Chowdhury",
                 "HODContactMailId": "hod_ee@aot.edu.in",
-                "DepartmentStaticData": "/DepartmentMD/EE.md"
+                "DepartmentStaticData": "/RichText/EE.html"
             }
         },
         {
@@ -102,7 +102,7 @@
                 "YearofEstablishment": "July 2020",
                 "HODname": "Prof. Hiranmoy Mondal",
                 "HODContactMailId": "hod_eee@aot.edu.in",
-                "DepartmentStaticData": "/DepartmentMD/EEE.md"
+                "DepartmentStaticData": "/RichText/EEE.html"
             }
         },
         {
@@ -116,7 +116,7 @@
                 "YearofEstablishment": "July 2009",
                 "HODname": " Prof. Niloy Ghosh",
                 "HODContactMailId": "hod_me@aot.edu.in",
-                "DepartmentStaticData": "/DepartmentMD/ME.md"
+                "DepartmentStaticData": "/RichText/ME.html"
             }
         }
     ],
@@ -207,9 +207,9 @@
     ],
     "contact": [
         {
-            "Title": "Admin Dept:",
-            "Tel": "+91-9830161441",
-            "Email": "admin@aot.edu.in"
+            "Title": "Admission Office: ",
+            "Tel": " +91-98310-21706",
+            "Email": " admission@aot.edu.in"
         },
         {
             "Title": "Director/ Principal Office:",
@@ -217,19 +217,14 @@
             "Email": " academy@aot.edu.in"
         },
         {
-            "Title": "Admin Dept:",
-            "Tel": "+91-9830161441",
-            "Email": "admin@aot.edu.in"
-        },
-        {
             "Title": "Academic & Exam. Dept:",
             "Tel": "+91-9073360791",
             "Email": "oicexam@aot.edu.in"
         },
         {
-            "Title": "Admission Office: ",
-            "Tel": " +91-98310-21706",
-            "Email": " admission@aot.edu.in"
+            "Title": "Admin Dept:",
+            "Tel": "+91-9830161441",
+            "Email": "admin@aot.edu.in"
         },
         {
             "Title": "Account Section: ",

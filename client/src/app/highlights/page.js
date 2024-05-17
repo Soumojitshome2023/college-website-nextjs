@@ -1,7 +1,8 @@
 "use client"
-import DepartmentsSection from '@/components/Departments/DepartmentsSection'
+import HighlightsSection from '@/components/Highlights/HighlightsSection'
 import React from 'react'
 
+// ==================== HighlightsSection Page ====================
 export default function Page() {
 
   // ==================== Return ====================
@@ -18,7 +19,7 @@ export default function Page() {
           </p>
         </div>
       </div> */}
-      <DepartmentsSection HorizontalScroll={false} />
+      <HighlightsSection HorizontalScroll={false} />
     </div>
   )
 }
