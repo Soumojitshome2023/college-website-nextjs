@@ -22,11 +22,17 @@ export function CarouselCompo() {
 
 	return (
 
-		<div className=" h-80 md:h-[30rem] ">
+		<div className=" h-80 md:h-[30rem]">
 			{CarouselImages &&
 				<Carousel>
 					{CarouselImages.map((image, index) => (
-						<img key={index} src={image.ImageLink} alt="..." />
+						<div key={index} className="relative h-full w-full">
+							<img
+								src={image.ImageLink}
+								alt="image"
+								className="object-cover h-full w-full"
+							/>
+						</div>
 					))}
 				</Carousel>
 			}
