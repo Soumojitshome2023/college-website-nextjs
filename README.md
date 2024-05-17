@@ -105,9 +105,6 @@ Once verified by a super admin, admin users gain access to the admin dashboard. 
 This two-step authentication process enhances security and control over admin access to the website's backend functionalities.
 
 
-## ✨ 
-![DemoVideo](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/DemoVideo.gif)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
