@@ -27,7 +27,13 @@
   <ol>
     <li><a href="#%EF%B8%8F-tech-stack">Tech Stack</a></li>
     <li><a href="#-features">Features</a></li>
-    <li><a href="#-screenshots">Screenshots</a></li>
+    <li>
+      <a href="#-screenshots">Screenshots</a>
+     <ul>
+      <li><a href="#-desktop-view-">Desktop View</a></li>
+      <li><a href="#-mobile-view-">Mobile View</a></li>
+    </ul>
+    </li>
     <li><a href="#-installation">Installation</a></li>
     <li><a href="#-usage">Usage</a></li>
     <li><a href="#-developers">Developers</a></li>
@@ -51,7 +57,15 @@ This project utilizes the following technologies:
 - **nextjs-toploader**: A loading indicator component for Next.js.
 
 
- ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) [![Cloudinary](https://img.shields.io/badge/cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)](https://www.cloudinary.com) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,6 +102,8 @@ Once verified by a super admin, admin users gain access to the admin dashboard. 
 
 This two-step authentication process enhances security and control over admin access to the website's backend functionalities.
 
+
+![DemoVideo](https://raw.githubusercontent.com/Soumojitshome2023/college-website-nextjs/master/Readmeassets/DemoVideo.gif)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -127,7 +143,7 @@ This two-step authentication process enhances security and control over admin ac
 [![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/DepartmentMobile.png)]()
 [![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/DepartmentMobile2.png)]()
 
-### ✨ # Admin Dashboard Page :
+### ✨  Admin Dashboard Page :
 
 [![Admin Dashboard Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/AdminDashboardMobile.png)]()
 
@@ -222,7 +238,7 @@ Meet the awesome people who have contributed to this project:
     </td>
     <td align="center">
       <a href="https://github.com/DebojyotiDe03">
-        <img src="https://avatars.githubusercontent.com/u/115725651?v=4" width="100px;" alt="BIBHAB22" style="border-radius:50%"/>
+        <img src="https://avatars.githubusercontent.com/u/115725651?v=4" width="100px;" alt="Debojyoti De" style="border-radius:50%"/>
         <br />
         <sub><b>Debojyoti De</b></sub>
       </a>
