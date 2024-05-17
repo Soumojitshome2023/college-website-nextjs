@@ -1,17 +1,37 @@
-# [College Website (Academy of Technology)](https://aotedu.vercel.app/)
+<a name="readme-top"></a>  
+
+<br />
+<div align="center">
+  <a target="_blank" href="https://github.com/Soumojitshome2023/college-website-nextjs">
+    <img src="https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/CollegeLogo.png" alt="College Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">College Website</h3>
+
+  <p align="center">
+    Welcome to the official repository for the Academy of Technology's college website. This project is developed as part of a college-level website design challenge. The website provides comprehensive information about the college, including events, notices, departments, and more.
+    <br />
+    <br />
+    <a target="_blank" href="https://aotedu.vercel.app/">View Demo</a>
+    ·
+    <a target="_blank" href="https://github.com/Soumojitshome2023/college-website-nextjs">Repo Link</a>
+    ·
+    <a href="mailto:soumojitshome2021@gmail.com">Mail Us</a>
+  </p>
+</div>
 
 
-Welcome to the official repository for the Academy of Technology's college website. This project is developed as part of a college-level website design challenge. The website provides comprehensive information about the college, including events, notices, departments, and more.
-
-## Table of Contents
-
-1. [Tech Stack](#tech-stack)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Folder Structure](#folder-structure)
-6. [Contributing](#contributing)
-7. [License](#license)
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#tech-stack">Tech Stack</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+  </ol>
+</details>
 
 ## Tech Stack
 
@@ -29,6 +49,10 @@ This project utilizes the following technologies:
 - **GitHub**: Version control and collaboration platform.
 - **nextjs-toploader**: A loading indicator component for Next.js.
 
+
+ ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) [![Cloudinary](https://img.shields.io/badge/cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)](https://www.cloudinary.com) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
 
@@ -48,30 +72,67 @@ The website includes the following features:
 12. **Syllabus Option**: Provides syllabi for all departments.
 13. **Contact Option**: Contact form and details for reaching out to the college.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Screenshots
-### Home : 
+
+### Desktop View :
+
+#### Home Page :
+
 [![Home Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/HomePage.png)]()
 
+#### Departments Page :
+
+[![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/DepartmentsPage.png)]()
+[![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/Department2.png)]()
+
+#### Admin Dashboard Page :
+
+[![Admin Dashboard Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/AdminDashboard.png)]()
+
+#### FAQ Section :
+
+[![FAQ Section](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/FAQSection.png)]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Mobile View :
+
+#### Home Page :
+
+[![Home Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/HomeMobile.png)]()
+[![Home Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/HomeMobile2.png)]()
+
+#### Departments Page :
+
+[![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/DepartmentMobile.png)]()
+[![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/DepartmentMobile2.png)]()
+
+#### Admin Dashboard Page :
+
+[![Admin Dashboard Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/AdminDashboardMobile.png)]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Installation
 
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/Soumojitshome2023/college-website-nextjs
-   cd client
-   cd server
    ```
-
 2. Install the dependencies:
+
    ```sh
    npm install
    ```
-
 3. Set up environment variables. Create a `.env` file in the root directory and add the following variables:
-    * Client :
+
+   * Client :
+
    ```
     NEXT_PUBLIC_BASEURL= http://localhost:3000
     NEXT_PUBLIC_SERVERURL= http://localhost:4000
@@ -79,47 +140,42 @@ To set up the project locally, follow these steps:
     NEXT_PUBLIC_UPLOAD_PRESET=
     NEXT_PUBLIC_CLOUD_FOLDER=college_website
    ```
-    * Server :
-    ```
-    MONGO_URI=
-    FRONTEND_URI=http://localhost:3000
-    REFRESH_TOKEN_KEY=
-    ACCESS_TOKEN_KEY=
-    PORT=4000
-    ```
 
+   * Server :
+
+   ```
+   MONGO_URI=
+   FRONTEND_URI=http://localhost:3000
+   REFRESH_TOKEN_KEY=
+   ACCESS_TOKEN_KEY=
+   PORT=4000
+   ```
 4. Run the development server:
+
    ```sh
    npm run dev
    ```
+
 
 ## Usage
 
 To use the website, navigate to `http://localhost:3000` in your browser. Admin users can log in to access the admin dashboard and manage content.
 
-## Folder Structure
-
-The project directory is structured as follows:
-
-```
-/college-website
-├── public
-│   └── images
-├── src
-│   ├── components
-│   ├── pages
-│   ├── styles
-│   ├── utils
-│   └── middleware
-├── .env.local
-├── next.config.js
-├── package.json
-├── README.md
-└── tailwind.config.js
-```
-
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
+
+## Project Created By :
+
+
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # Thank You :)
+
+
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
