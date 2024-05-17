@@ -25,11 +25,11 @@
 <details>
   <summary> 🔰 Table of Contents</summary>
   <ol>
-    <li><a href="#tech-stack">Tech Stack</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#screenshots">Screenshots</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#%EF%B8%8F-tech-stack">Tech Stack</a></li>
+    <li><a href="#-features">Features</a></li>
+    <li><a href="#-screenshots">Screenshots</a></li>
+    <li><a href="#-installation">Installation</a></li>
+    <li><a href="#-usage">Usage</a></li>
   </ol>
 </details>
 
@@ -71,6 +71,23 @@ The website includes the following features:
 11. **FAQ Section**: Frequently asked questions and their answers.
 12. **Syllabus Option**: Provides syllabi for all departments.
 13. **Contact Option**: Contact form and details for reaching out to the college.
+
+## **🔰 Important Feature :** 
+* #### Admin Authentication
+
+The website includes a robust admin authentication system. **Upon signup, new admin account is created, but he/she is not immediately granted access to the admin dashboard.** Instead, they undergo verification by a designated **"super admin"** from our database.
+
+* #### Super Admin: The Database Owner
+
+Only super admins have the authority to approve new admin accounts. This verification step ensures that only authorized individuals gain access to the admin dashboard and its functionalities.
+
+* #### Admin Dashboard Access
+
+Once verified by a super admin, admin users gain access to the admin dashboard. From there, they can perform various tasks such as adding, editing, and managing events, as well as other administrative duties.
+
+This two-step authentication process enhances security and control over admin access to the website's backend functionalities.
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
