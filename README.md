@@ -21,7 +21,7 @@
 </div>
 
 ## 💻 Demo
-<video src="https://res.cloudinary.com/drctt42py/video/upload/v1715963237/college_website/Untitled_Video_-_Made_With_Clipchamp_5_k3a2re.mp4" controls></video>
+https://github.com/Soumojitshome2023/college-website-nextjs/assets/109234507/2bb72282-7302-46ea-94ff-5af1334aed69
 
 <!-- TABLE OF CONTENTS -->
 <details>
