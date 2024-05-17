@@ -28,7 +28,9 @@ export default function DepartmentsSection({ HorizontalScroll = true }) {
                 {DepartmentsData &&
                     <div className={`flex justify-center ${HorizontalScroll ? "w-fit flex-row" : "flex-wrap"}`}>
                         {DepartmentsData.map((departmentData, index) => (
-                            <DepartmentCard key={index} data={departmentData} />
+                            <div key={index} className={`p-2 my-4 mx-2 md:w-96 ${HorizontalScroll ? "w-96" : "w-full"}`}>
+                                <DepartmentCard  data={departmentData} />
+                            </div>
                         ))}
                     </div>
                 }

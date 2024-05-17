@@ -30,7 +30,9 @@ export default function EventCardSection({ HorizontalScroll = true }) {
 					{EventsData &&
 						<div className={`flex justify-center ${HorizontalScroll ? "w-fit flex-row" : "flex-wrap"}`}>
 							{EventsData.map((data, index) => (
-								<EventCard key={index} data={data} />
+								<div key={index} className={`p-2 my-4 mx-2 md:w-96 ${HorizontalScroll ? "w-96" : "w-full"}`}>
+									<EventCard data={data} />
+								</div>
 							))}
 						</div>
 					}

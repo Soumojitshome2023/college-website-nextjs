@@ -12,7 +12,7 @@ export default function EventCard({ data }) {
 	return (
 		<>
 			{/* Card  */}
-			<AnimatedElement className="p-2 my-4 mx-2 md:w-96 w-full">
+			<AnimatedElement>
 				<div className="rounded-lg min-h-96">
 					<img className="md:h-48 h-40 w-full rounded-lg object-cover object-center" src={data.posterURL} alt="img" />
 					<div className="p-2">

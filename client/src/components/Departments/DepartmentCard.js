@@ -6,7 +6,7 @@ export default function DepartmentCard({ data }) {
 	return (
 		<>
 			{/* Card  */}
-			<AnimatedElement className="p-2 my-4 mx-2 md:w-96 w-full">
+			<AnimatedElement >
 				<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
 					<img className="lg:h-48 md:h-36 w-full object-cover object-center" src={data.BannerPic} alt="img" />
 					<div className="p-6">

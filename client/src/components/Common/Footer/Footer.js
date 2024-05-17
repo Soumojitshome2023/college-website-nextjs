@@ -17,7 +17,7 @@ export default function Footer() {
 
           {/* Footer Links  */}
           {/* Departments */}
-          <AnimatedElement className=" flex-grow flex flex-wrap mb-10 md:text-left text-center order-first">
+          <AnimatedElement className=" flex-grow flex flex-wrap mb-10 text-left order-first">
             <div className="lg:w-2/5 md:w-1/2 w-full px-4">
               <h2 className="title-font font-bold text-white tracking-widest text-lg mb-3">Departments</h2>
               <nav className="list-none mb-10">

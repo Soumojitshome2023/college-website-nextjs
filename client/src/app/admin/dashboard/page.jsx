@@ -5,7 +5,6 @@ import React, { useEffect } from "react";
 import { useRouter } from 'next/navigation';
 import { useAuth } from "@/context/auth";
 import { AdminLogOutFunc } from "@/Helper/AdminLogOutFunc";
-import axios from "axios";
 
 //============== Admin Dashborad ===============
 const Page = () => {

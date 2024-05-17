@@ -10,6 +10,7 @@ import HamburgerIcon from './HamburgerIcon';
 export default function Navbar() {
   const [NavOpen, setNavOpen] = useState(false)
 
+  
   return (
     <>
       <div className='sticky bg-white bg-opacity-40 top-0 z-50 backdrop-blur-2xl transform transition-all duration-1000 ease-in-out'>

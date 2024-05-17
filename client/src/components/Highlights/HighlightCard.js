@@ -8,7 +8,7 @@ export default function HighlightCard({ data }) {
 	return (
 		<>
 			{/* Card  */}
-			<AnimatedElement className="p-2 my-4 mx-2 md:w-96 w-full">
+			<AnimatedElement >
 				<div className="h-full rounded-lg overflow-hidden">
 					<img className="md:h-48 h-40 w-full rounded-lg object-cover object-center" src={data.BannerPic} alt="img" />
 					<div className="p-2">
