@@ -30,6 +30,7 @@
     <li><a href="#-screenshots">Screenshots</a></li>
     <li><a href="#-installation">Installation</a></li>
     <li><a href="#-usage">Usage</a></li>
+    <li><a href="#-developers">Developers</a></li>
   </ol>
 </details>
 
@@ -182,6 +183,8 @@ To use the website, navigate to `http://localhost:3000` in your browser. Admin u
 
 ---
 
+
+## ✨ Developers
 
 <div>
 <h1 align="center">
