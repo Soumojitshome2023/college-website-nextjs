@@ -3,10 +3,10 @@
 <br />
 <div align="center">
   <a target="_blank" href="https://github.com/Soumojitshome2023/college-website-nextjs">
-    <img src="https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/CollegeLogo.png" alt="College Logo" width="80" height="80">
+    <img src="https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/CollegeLogo.png" alt="College Logo" width="150" >
   </a>
 
-  <h3 align="center">College Website</h3>
+  <h3 align="center">College Website (Academy Of Technology)</h3>
 
   <p align="center">
     Welcome to the official repository for the Academy of Technology's college website. This project is developed as part of a college-level website design challenge. The website provides comprehensive information about the college, including events, notices, departments, and more.
@@ -23,7 +23,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary> 🔰 Table of Contents</summary>
   <ol>
     <li><a href="#tech-stack">Tech Stack</a></li>
     <li><a href="#features">Features</a></li>
@@ -33,7 +33,7 @@
   </ol>
 </details>
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 This project utilizes the following technologies:
 
@@ -54,7 +54,7 @@ This project utilizes the following technologies:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Features
+## 🎉 Features
 
 The website includes the following features:
 
@@ -74,48 +74,48 @@ The website includes the following features:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Screenshots
+## ✨ Screenshots
 
-### Desktop View :
+### 💻 Desktop View :
 
-#### Home Page :
+####  ✨  Home Page :
 
 [![Home Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/HomePage.png)]()
 
-#### Departments Page :
+#### ✨  Departments Page :
 
 [![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/DepartmentsPage.png)]()
 [![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/Department2.png)]()
 
-#### Admin Dashboard Page :
+#### ✨  Admin Dashboard Page :
 
 [![Admin Dashboard Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/AdminDashboard.png)]()
 
-#### FAQ Section :
+#### ✨  FAQ Section :
 
 [![FAQ Section](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/FAQSection.png)]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Mobile View :
+### 📱 Mobile View :
 
-#### Home Page :
+#### ✨  Home Page :
 
 [![Home Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/HomeMobile.png)]()
 [![Home Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/HomeMobile2.png)]()
 
-#### Departments Page :
+#### ✨  Departments Page :
 
 [![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/DepartmentMobile.png)]()
 [![Departments Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/DepartmentMobile2.png)]()
 
-#### Admin Dashboard Page :
+### ✨ # Admin Dashboard Page :
 
 [![Admin Dashboard Page](https://github.com/Soumojitshome2023/college-website-nextjs/blob/master/Readmeassets/AdminDashboardMobile.png)]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Installation
+## ✨ Installation
 
 To set up the project locally, follow these steps:
 
@@ -157,7 +157,7 @@ To set up the project locally, follow these steps:
    ```
 
 
-## Usage
+## ✨ Usage
 
 To use the website, navigate to `http://localhost:3000` in your browser. Admin users can log in to access the admin dashboard and manage content.
 
@@ -166,7 +166,49 @@ To use the website, navigate to `http://localhost:3000` in your browser. Admin u
 ---
 
 
-## Project Created By :
+<div>
+<h1 align="center">
+ <b>Made with ❤️ by team NextGenDev
+<h1>
+</div>
+Meet the awesome people who have contributed to this project:
+
+
+<br />
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Soumojitshome2023">
+        <img src="https://avatars.githubusercontent.com/u/121761154?v=4" width="100px;" alt="Soumojit Shome" style="border-radius:50%"/>
+        <br />
+        <sub><b>Soumojit Shome[Lead]</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Rick-03">
+        <img src="https://avatars.githubusercontent.com/u/116449504?v=4" width="100px;" alt="Satwick Mukherjee" style="border-radius:50%"/>
+        <br />
+        <sub><b>Satwick Mukherjee</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ritesh2004">
+        <img src="https://avatars.githubusercontent.com/u/109234507?v=4" width="100px;" alt="Ritesh Pramanik
+" style="border-radius:50%"/>
+        <br />
+        <sub><b>Ritesh Pramanik
+</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/DebojyotiDe03">
+        <img src="https://avatars.githubusercontent.com/u/115725651?v=4" width="100px;" alt="BIBHAB22" style="border-radius:50%"/>
+        <br />
+        <sub><b>Debojyoti De</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 
@@ -174,8 +216,4 @@ To use the website, navigate to `http://localhost:3000` in your browser. Admin u
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Thank You :)
-
-
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
+## Thank You ...
